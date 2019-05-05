@@ -1,0 +1,96 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/crypto-js/mode-cfb.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '20e999TveVEo4+/1UgDmwb5', 'mode-cfb', __filename);
+// script/crypto-js/mode-cfb.js
+
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+;(function (root, factory, undef) {
+	if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") {
+		// CommonJS
+		module.exports = exports = factory(require("./core"), require("./cipher-core"));
+	} else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core", "./cipher-core"], factory);
+	} else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+})(undefined, function (CryptoJS) {
+
+	/**
+  * Cipher Feedback block mode.
+  */
+	CryptoJS.mode.CFB = function () {
+		var CFB = CryptoJS.lib.BlockCipherMode.extend();
+
+		CFB.Encryptor = CFB.extend({
+			processBlock: function processBlock(words, offset) {
+				// Shortcuts
+				var cipher = this._cipher;
+				var blockSize = cipher.blockSize;
+
+				generateKeystreamAndEncrypt.call(this, words, offset, blockSize, cipher);
+
+				// Remember this block to use with next block
+				this._prevBlock = words.slice(offset, offset + blockSize);
+			}
+		});
+
+		CFB.Decryptor = CFB.extend({
+			processBlock: function processBlock(words, offset) {
+				// Shortcuts
+				var cipher = this._cipher;
+				var blockSize = cipher.blockSize;
+
+				// Remember this block to use with next block
+				var thisBlock = words.slice(offset, offset + blockSize);
+
+				generateKeystreamAndEncrypt.call(this, words, offset, blockSize, cipher);
+
+				// This block becomes the previous block
+				this._prevBlock = thisBlock;
+			}
+		});
+
+		function generateKeystreamAndEncrypt(words, offset, blockSize, cipher) {
+			// Shortcut
+			var iv = this._iv;
+
+			// Generate keystream
+			if (iv) {
+				var keystream = iv.slice(0);
+
+				// Remove IV for subsequent blocks
+				this._iv = undefined;
+			} else {
+				var keystream = this._prevBlock;
+			}
+			cipher.encryptBlock(keystream, 0);
+
+			// Encrypt
+			for (var i = 0; i < blockSize; i++) {
+				words[offset + i] ^= keystream[i];
+			}
+		}
+
+		return CFB;
+	}();
+
+	return CryptoJS.mode.CFB;
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=mode-cfb.js.map
+        

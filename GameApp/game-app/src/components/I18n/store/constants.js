@@ -1,0 +1,1 @@
+export const LANG = 'I18n/LANG';

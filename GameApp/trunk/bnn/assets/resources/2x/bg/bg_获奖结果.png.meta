@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "a9865c5b-9e51-48ac-b155-2ce30f24bd2a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "bg_获奖结果": {
+      "ver": "1.0.3",
+      "uuid": "c562a9bd-582e-48ee-bde9-d130ad8888f6",
+      "rawTextureUuid": "a9865c5b-9e51-48ac-b155-2ce30f24bd2a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 475,
+      "height": 116,
+      "rawWidth": 478,
+      "rawHeight": 116,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

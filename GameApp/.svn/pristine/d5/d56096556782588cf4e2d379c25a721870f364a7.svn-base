@@ -1,0 +1,25 @@
+"use strict";
+cc._RF.push(module, '65d68U5HLpGMayOVd/Ln+jp', 'hmac-sha512');
+// script/crypto-js/hmac-sha512.js
+
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+;(function (root, factory, undef) {
+	if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") {
+		// CommonJS
+		module.exports = exports = factory(require("./core"), require("./x64-core"), require("./sha512"), require("./hmac"));
+	} else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core", "./x64-core", "./sha512", "./hmac"], factory);
+	} else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+})(undefined, function (CryptoJS) {
+
+	return CryptoJS.HmacSHA512;
+});
+
+cc._RF.pop();

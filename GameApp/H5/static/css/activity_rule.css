@@ -1,0 +1,186 @@
+.rule_wrap {
+    background-color: #2f2fa4;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    max-width: 750px;
+    padding-bottom: 0.5rem;
+    margin: auto;
+}
+
+.btn_back {
+    height: 0.6rem;
+    margin-left: 0.1rem;
+    margin-top: 0.3rem;
+    width: 20%;
+    color: #fff;
+    font-size: 0.3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.rule_top {
+    height: 5.82rem;
+    width: 100%;
+    background: url(../images/activity/top_bg.png) no-repeat center;
+    background-size: contain;
+    position: relative;
+}
+
+.rule_title_size {
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    width: 85%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    background-color: #222279;
+    color: #fff;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.activity_timer {
+    line-height: 0.64rem;
+    font-size: 0.3rem;
+    color: #8d90ff;
+    letter-spacing: 2px;
+}
+
+.time_list {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.3rem;
+}
+
+.time_list li {
+    width: 0.68rem;
+    height: 0.64rem;
+    text-align: center;
+    line-height: 0.64rem;
+    font-size: 0.28rem;
+    color: #8d90ff;
+}
+
+.time_list .time_num {
+    width: 0.64rem;
+    background-color: #22228a;
+    border-radius: 0.08rem;
+    font-size: 0.48rem;
+    color: #fff;
+}
+
+.download_game {
+    padding: 0.48rem 0;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.download_game img {
+    width: 4.88rem;
+}
+
+.activity_rule,
+.rebate_rule {
+    width: 6.88rem;
+    min-height: 7.76rem;
+    background-color: #3258e8;
+    margin: auto;
+    border-radius: 0.08rem;
+    position: relative;
+    padding-bottom: 0.64rem;
+}
+
+.jiao {
+    position: absolute;
+    width: 0.16rem;
+}
+
+.zuoshang {
+    left: 0.18rem;
+    top: 0.18rem;
+}
+
+.youshang {
+    right: 0.18rem;
+    top: 0.18rem;
+}
+
+.zuoxia {
+    left: 0.18rem;
+    bottom: 0.18rem;
+}
+
+.youxia {
+    right: 0.18rem;
+    bottom: 0.18rem;
+}
+
+.activity_title,
+.rebate_title {
+    text-align: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.42rem;
+}
+
+.activity_title img,
+.rebate_title img {
+    width: 2.62rem;
+}
+
+.rebate_rule {
+    min-height: 4.82rem;
+    margin: 0.3rem auto 0 auto;
+}
+
+.rule_size {
+    width: 5.7rem;
+    margin: auto;
+}
+
+.rule_size li {
+    display: flex;
+}
+
+.rule_size li:first-child {
+    margin-bottom: 0.2rem;
+}
+
+.rule_size li p {
+    font-size: 0.28rem;
+    line-height: 0.48rem;
+    color: #d7dffe;
+}
+
+.rebate_list {
+    width: 5.51rem;
+    margin: auto;
+}
+
+.rebate_list li {
+    display: flex;
+    width: 100%;
+    height: 0.68rem;
+}
+
+.rebate_list li p {
+    background-color: rgba(255, 255, 255, 0.6);
+    flex: 1;
+    line-height: 0.68rem;
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 0.28rem;
+    color: #2536bd;
+}
+
+.rebate_list li:first-child p {
+    background-color: rgb(255, 255, 255);
+    font-size: 0.28rem;
+    color: #2635bd;
+    font-weight: 700;
+}
+
+.rebate_list li p:first-child {
+    margin-right: 2px;
+}

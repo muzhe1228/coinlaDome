@@ -1,0 +1,53 @@
+"use strict";
+cc._RF.push(module, 'b0b8834KH1HHaimk3LRvjZ6', 'game-controller');
+// script/game-controller.js
+
+"use strict";
+
+var _global = require("./global");
+
+var _global2 = _interopRequireDefault(_global);
+
+var _eventListener = require("./event-listener");
+
+var _eventListener2 = _interopRequireDefault(_eventListener);
+
+var _ajax = require("./ajax");
+
+var _ajax2 = _interopRequireDefault(_ajax);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+cc.Class({
+  extends: cc.Component,
+
+  properties: {
+    MainWorld: {}
+  },
+
+  // LIFE-CYCLE CALLBACKS:
+
+  onLoad: function onLoad() {
+    _global2.default.eventlistener = (0, _eventListener2.default)({});
+    _global2.default.$http = new _ajax2.default();
+    _global2.default.eventlistener.on("login", this.Login);
+    _global2.default.eventlistener.on("addPk", this.AddPk);
+    _global2.default.eventlistener.on("setBtn", this.setBtn);
+  },
+  Login: function Login(uid) {
+    cc.log("button click = " + uid);
+  },
+  AddPk: function AddPk(msg) {
+    cc.log("addPk = " + msg);
+  },
+  setBtn: function setBtn(msg) {
+    cc.log("addPk = " + msg);
+  },
+  start: function start() {}
+
+  // update (dt) {},
+
+}); // const EventListener = require("./event-listener");
+// const global = require("./global");
+
+cc._RF.pop();

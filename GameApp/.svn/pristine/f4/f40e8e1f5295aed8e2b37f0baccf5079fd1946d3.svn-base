@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:background="@drawable/corner_view_white_10"
+        android:layout_width="match_parent"
+        android:layout_height="114.5dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_take"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:textSize="@dimen/textsize20"
+            android:textColor="@color/textcolor1"
+            android:text="拍照"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line_division"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:id="@+id/tv_album"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:textSize="@dimen/textsize20"
+            android:textColor="@color/textcolor1"
+            android:text="相册"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:background="@drawable/corner_view_white_10"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/textsize20"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="取消"/>
+
+</LinearLayout>

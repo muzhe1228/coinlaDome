@@ -1,0 +1,155 @@
+
+名称：哈希牛牛庄信息-socket
+地址：/gameNiuniuBankerSocket/{roomId}
+参数：roomId: 房间id
+返回：连接成功
+消息：{
+		  "userId": 1,
+		  "nick": "",
+		  "head": "",
+		  "remain":"连庄数",
+		  "maxRemain":"最大连庄数"
+		}
+
+
+
+名称：开奖结果socket
+地址：gameLotterySocket/{userId}
+参数：userId : 用户id
+返回：连接成功
+消息：{
+		"gameType": 0-牛牛，1-竞猜，2-彩票，3-一元夺宝,
+		"currencyType": 0-eth，1-pk,
+		"winBets": 赢取金额（正为赢，负为输）
+		}
+
+
+
+
+名称：游戏状态切换socket
+地址：/gameStateSwitchSocket/{type}/{roomId}
+参数：type 游戏类型（0-牛牛，1-竞猜，2-彩票，3-一元夺宝）
+	 roomId 房间id 如果没有传1
+返回：连接成功
+消息：{
+		"state": 0-下注中，1-开奖中,3竞庄中，2-重新开盘
+		"time": 倒计时
+		}
+
+名称：游戏房间聊天socket
+地址：/gameChatSocket/{type}/{roomId}
+参数：type 游戏类型（0-牛牛，1-竞猜，2-彩票，3-一元夺宝）
+	 roomId 房间id 如果没有传0
+返回：连接成功
+消息：{
+		"userName": 用户昵称,
+		"content": 内容
+		}
+
+
+名称：本局（当前）socket
+地址：/gameCurrentSocket/{type}/{roomId}
+参数：type 游戏类型（0-牛牛，1-竞猜，2-彩票，3-一元夺宝）
+	 roomId 房间id 如果没有传0
+返回：连接成功
+消息：{
+		"userName": 用户昵称,
+		"result": 下注内容,
+		"bets": 下注金额
+		}
+
+
+名称：路子socket
+地址：/gameWaySocket/{type}
+参数：type 游戏类型（0-牛牛，1-竞猜，2-彩票，3-一元夺宝）
+返回：连接成功
+消息：{
+		"period": 期数,
+		"bets": 结果
+		}
+
+
+名称：游戏位置金额-socket
+地址：/gamePositionSocket/{type}/{roomId}
+参数：type 游戏类型（0-牛牛，1-竞猜，2-彩票，3-一元夺宝）
+	 roomId 房间id 如果没有传0
+返回：连接成功
+消息：{
+		"position": 位置id,
+		"bets": 下注金额
+		}
+
+
+名称：底部小喇叭（公告及大奖）socket
+地址：/noticeSocket
+参数：
+返回：连接成功
+消息：{
+		"message": 消息
+		}
+
+
+名称：pk资产-socket
+地址：/pkAssetsSocket/{userId}
+参数：userId：用户id
+返回：连接成功
+消息：{
+		"pk": pk资产 
+		}
+
+
+名称：哈希牛牛竞庄-socket
+地址：/gameNiuniuContendSocket/{roomId}
+参数：roomId: 房间id
+返回：连接成功
+消息：{
+		"userId": 用户id,
+		"userName": 用户昵称,
+		"type": 0-竞庄，1-取消竞庄,
+		"bets": 竞庄金额
+		}
+
+
+名称：哈希牛牛列表人数监控-socket
+地址：/gameNiuniuListSocket
+参数：
+返回：连接成功
+消息：{
+		"roomId": 房间id,
+		"number": 人数
+		}
+
+
+名称：一元夺宝列表socket
+地址：/gameDuobaoListSocket
+参数：
+返回：连接成功
+消息：{
+		"type": 类型：0-添加，1-进度修改,
+		"dbId": id,
+		"reward": 奖励,
+		"logo": 奖励logo,
+		"totalNumber": 总量,
+		"purchasedNumber": 已购数量,
+		"startTime": 开始时间,
+		"endTime": 结束时间
+		}		
+
+
+名称：一元夺宝-详情socket
+地址：/gameDuobaoDetailSocket/{dbId}
+参数：dbId: id
+返回：连接成功
+消息：{
+		"totalNumber": 总量,
+		"purchasedNumber": 已购数量
+		}			
+
+
+名称：客服聊天socket
+地址：guestChatSocket/{userId}
+参数：userId：用户id
+返回：连接成功
+消息：{
+		"message": 消息
+		}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!--忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    
+    <title>BBPK</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../static/css/reset.css" />
+    <link rel="stylesheet" href="../static/css/register.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.png" />
+    <script src="https://www.recaptcha.net/recaptcha/api.js?render=6Lf-8Z8UAAAAAKY3mcurodttmKnonkgaoraMjy-E"></script>
+    <script type="text/javascript" src="../static/js/resize.js"></script>
+    <script type="text/javascript" src="../static/js/constant.js"></script>
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="../static/js/html2canvas.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="../static/js/jsencrypt.min.js"></script>
+    <script type="text/javascript" src="../static/js/aes.js"></script>
+    <script type="text/javascript" src="../static/js/pad-zeropadding.js"></script>
+    <script type="text/javascript" src="../static/js/security.js"></script>
+    <script type="text/javascript" src="../static/js/random.js"></script>
+    <script type="text/javascript" src="../static/js/register.js"></script>
+  </head>
+  <body>
+    <div style="display:none">
+      <script
+        type="text/javascript"
+        src="https://s23.cnzz.com/z_stat.php?id=1276440085&web_id=1276440085"
+      ></script>
+      <script>
+        function isIos_And_Pc() {
+          var u = navigator.userAgent,
+            app = navigator.appVersion;
+          var isAndroid = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1; //g
+          var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+          if (isIOS) {
+            return "ios";
+          } else if (isAndroid) {
+            return "android";
+          } else {
+            return "pc";
+          }
+        }
+        //声明_czc对象:
+        var _czc = _czc || [];
+        //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+        _czc.push(["_setAccount", "1276440085"]);
+        _czc.push(["_setCustomVar", "访客来源", isIos_And_Pc(), 0]);
+      </script>
+    </div>
+    <div class="register">
+      <div class="header">
+        <img class="downLogo" src="../static/images/logo_top@3x.png" alt="" />
+        <p class="logoSize">
+          <span class="sizeBig">BBPK</span>
+          <span class="sizeInfo"></span>
+        </p>
+        <button class="topDownBtn">下载APP</button>
+      </div>
+      <div class="top_bg"></div>
+      <div class="wrapper">
+        <div class="wrap_top">
+          <img class="logo" src="../static/images/logo@3x.png" alt="" />
+        </div>
+        <div class="wrap-from">
+          <div class="inp_group">
+            <p class="icon icon_email"></p>
+            <input
+              class="inp"
+              type="text"
+              id="email"
+              placeholder="请输入手机号或邮箱"
+            />
+          </div>
+          <div class="inp_group">
+            <p class="icon icon_code"></p>
+            <input class="inp" type="text" id="code" placeholder="输入验证码" />
+            <button class="sendCode">获取验证码</button>
+          </div>
+          <div class="inp_group">
+            <p class="icon icon_pwd"></p>
+            <input
+              class="inp"
+              type="password"
+              id="pwd"
+              placeholder="请输入你您的密码"
+            />
+          </div>
+          <div class="inp_group">
+            <p class="icon icon_invite"></p>
+            <input
+              class="inp"
+              type="text"
+              id="invite"
+              value="AebBSo"
+              disabled
+            />
+          </div>
+          <button class="submitBtn">立即注册</button>
+        </div>
+      </div>
+      <p class="tips"></p>
+    </div>
+    <p class="tishi"></p>
+    <div class="successMode">
+      <div class="successWrap">
+        <img class="closeDown" src="../static/images/close@3x.png" alt="" />
+
+        <div class="downCont">
+          <img class="topBg" src="../static/images/success.png" alt="" />
+          <div class="downInfo">
+            <p class="downloadTip"></p>
+            <button class="downloadBtn">立即下载</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="item_height">46dp</dimen>
+    <dimen name="item_height_large">58dp</dimen>
+    <dimen name="item_height_largest">70dp</dimen>
+
+    <!--<dimen name ="textsize36">36sp</dimen>
+    <dimen name ="textsize33">33sp</dimen>
+    <dimen name ="textsize32">32sp</dimen>
+    <dimen name ="textsize26">26sp</dimen>
+    <dimen name ="textsize25">25sp</dimen>
+    <dimen name ="textsize24">24sp</dimen>
+    <dimen name ="textsize22">22sp</dimen>
+    <dimen name ="textsize20">20sp</dimen>
+    <dimen name ="textsize19">19sp</dimen>
+    <dimen name ="textsize18">18sp</dimen>
+    <dimen name ="textsize17">17sp</dimen>
+    <dimen name ="textsize16">16sp</dimen>
+    <dimen name ="textsize15">15sp</dimen>
+    <dimen name ="textsize14">14sp</dimen>
+    <dimen name ="textsize13">13sp</dimen>
+    <dimen name ="textsize12">12sp</dimen>
+    <dimen name ="textsize11">11sp</dimen>
+    <dimen name ="textsize10">10sp</dimen>
+    <dimen name ="textsize9">9sp</dimen>
+    <dimen name ="textsize8">8sp</dimen>-->
+
+    <dimen name="textsize36">36dp</dimen>
+    <dimen name="textsize33">33dp</dimen>
+    <dimen name="textsize32">32dp</dimen>
+    <dimen name="textsize26">26dp</dimen>
+    <dimen name="textsize25">25dp</dimen>
+    <dimen name="textsize24">24dp</dimen>
+    <dimen name="textsize22">22dp</dimen>
+    <dimen name="textsize20">20dp</dimen>
+    <dimen name="textsize19">19dp</dimen>
+    <dimen name="textsize18">18dp</dimen>
+    <dimen name="textsize17">17dp</dimen>
+    <dimen name="textsize16">16dp</dimen>
+    <dimen name="textsize15">15dp</dimen>
+    <dimen name="textsize14">14dp</dimen>
+    <dimen name="textsize13">13dp</dimen>
+    <dimen name="textsize12">12dp</dimen>
+    <dimen name="textsize11">11dp</dimen>
+    <dimen name="textsize10">10dp</dimen>
+    <dimen name="textsize9">9dp</dimen>
+    <dimen name="textsize8">7dp</dimen>
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+
+</resources>

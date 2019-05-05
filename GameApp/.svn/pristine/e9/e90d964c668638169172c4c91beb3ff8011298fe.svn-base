@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "CONTRIBUTING",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "# Contribution\n\n# Git Flow \n\nThe crypto-js project uses [git flow](https://github.com/nvie/gitflow) to manage branches. \nDo your changes on the `develop` or even better on a `feature/*` branch. Don't do any changes on the `master` branch.\n\n# Pull request\n\nTarget your pull request on `develop` branch. Other pull request won't be accepted.\n\n# How to build\n\n1. Clone\n\n2. Run\n\n    ```sh\n    npm install\n    ```\n\n3. Run\n\n    ```sh\n    npm run build\n    ```\n    \n4. Check `build` folder"
+}

@@ -1,0 +1,138 @@
+"use strict";
+cc._RF.push(module, 'ab229Wbq5xMmqDhChzw2UUu', 'ajax');
+// script/ajax.js
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _funcComm = require("./funcComm");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * 新版接口
+ * @example 使用 var Http = require('Http')
+ * @example      new Http().Get(url, cb)//url链接 回调函数
+ * @example      new Http().Post(url, param, cb)//url链接 param参数(json对象) 回调函数
+ */
+var CusHttp = function () {
+  function CusHttp() {
+    _classCallCheck(this, CusHttp);
+
+    this._http;
+    this._callback;
+    this.flag;
+
+    // this._event = CusEvent.getInstance();
+  }
+  /**
+   *
+   * @param actual
+   */
+
+
+  _createClass(CusHttp, [{
+    key: "cleanArray",
+    value: function cleanArray(actual) {
+      var newArray = [];
+      for (var i = 0; i < actual.length; i++) {
+        if (actual[i]) {
+          newArray.push(actual[i]);
+        }
+      }
+      return newArray;
+    }
+
+    /**
+     * JSON对象转换为QueryString
+     * @param jsonObj
+     */
+
+  }, {
+    key: "toQueryString",
+    value: function toQueryString(jsonObj) {
+      if (!jsonObj) return "";
+      var jsonString = this.cleanArray(Object.keys(jsonObj).map(function (key) {
+        if (jsonObj[key] === undefined) return "";
+        return encodeURIComponent(key) + "=" + encodeURIComponent(jsonObj[key]);
+      })).join("&");
+
+      return jsonString;
+    }
+
+    /**
+     * Get 请求
+     * @param {*} Url
+     * @param {*} cb
+     */
+
+  }, {
+    key: "Get",
+    value: function Get(Url, cb) {
+      cc.info(Url);
+      var http = cc.loader.getXMLHttpRequest();
+      http.open("GET", Url, true);
+      http.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+      this._callback = cb;
+      http.onreadystatechange = this._result.bind(this);
+      http.timeout = 10000;
+      http.send();
+      this._http = http;
+    }
+    /**
+     * Post请求
+     * @param {*}flag,是否加密
+     */
+
+  }, {
+    key: "Post",
+    value: function Post(Url, params, cb, flag) {
+      this.flag = flag;
+      data = JSON.stringify(data); //以前不懂要怎么传，是缺少这一步
+      var http = cc.loader.getXMLHttpRequest(),
+          contentType = "application/x-www-form-urlencoded",
+          data = this.toQueryString(params);
+      http.open("POST", Url, true);
+      if (!flag) {
+        contentType = "application/json";
+        data = JSON.stringify((0, _funcComm.encryption)(params));
+      }
+      http.setRequestHeader("Content-Type", contentType);
+      this._callback = cb;
+      http.onreadystatechange = this._result.bind(this);
+      http.timeout = 5000; //超时5秒
+      http.send(data);
+      this._http = http;
+    }
+    /**
+     * 获取结果给_callback
+     */
+
+  }, {
+    key: "_result",
+    value: function _result() {
+      if (this._http.readyState == 4) {
+        if (this._http.status >= 200 && this._http.status < 207) {
+          var data = JSON.parse(this._http.responseText);
+          if (this._callback) {
+            this.flag ? this._callback(data, this._http) : this._callback((0, _funcComm.DecryptData)(data), this._http);
+          }
+        } else {
+          cc.log("请求失败");
+        }
+      }
+    }
+  }]);
+
+  return CusHttp;
+}();
+
+exports.default = CusHttp;
+module.exports = exports["default"];
+
+cc._RF.pop();

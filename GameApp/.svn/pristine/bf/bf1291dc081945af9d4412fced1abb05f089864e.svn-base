@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <meta http-equiv="Pragma" content="no-cache" />
+    <!-- 用于设定禁止浏览器从本地机的缓存中调阅页面内容 -->
+
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <!-- Cache-Control指定请求和响应遵循的缓存机制。在请求消息或响应消息中设置Cache-Control并不会修改另一个消息处理过程中的缓存处理过程。 -->
+
+    <meta http-equiv="Expires" content="0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit" />
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--
+    针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓
+  -->
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="keywords" content="BTC比特币游戏,以太坊游戏,USDT游戏" />
+    <meta
+      name="description"
+      content="BBPK专业区块链游戏服务提供商,提供比特币游戏以及ETH游戏 USDT游戏等服务"
+    />
+    <title>BBPK</title>
+    <link rel="icon" type="image/x-icon" href="<%= BASE_URL %>favicon.png" />
+    <script src="https://www.recaptcha.net/recaptcha/api.js?render=6Lf-8Z8UAAAAAKY3mcurodttmKnonkgaoraMjy-E"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but newgame doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div style="display:none">
+      <script
+        type="text/javascript"
+        src="https://s23.cnzz.com/z_stat.php?id=1276440085&web_id=1276440085"
+      ></script>
+      <script>
+        function isIos_And_Pc() {
+          var u = navigator.userAgent,
+            app = navigator.appVersion;
+          var isAndroid = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1; //g
+          var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+          if (isIOS) {
+            return "ios";
+          } else if (isAndroid) {
+            return "android";
+          } else {
+            return "pc";
+          }
+        }
+        //声明_czc对象:
+        var _czc = _czc || [];
+        //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+        _czc.push(["_setAccount", "1276440085"]);
+        _czc.push(["_setCustomVar", "访客来源", isIos_And_Pc(), 1]);
+      </script>
+    </div>
+    <div id="app"></div>
+
+    <!-- <audio src="/va/loading.mp3" autoplay loop id="loading"></audio> -->
+    <!-- built files will be auto injected -->
+  </body>
+</html>

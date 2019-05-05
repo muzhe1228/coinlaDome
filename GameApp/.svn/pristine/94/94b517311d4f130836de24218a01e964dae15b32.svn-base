@@ -1,0 +1,37 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/crypto-js/hmac-sha384.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '4a1d0kPwHhJwIVK9ylEeulr', 'hmac-sha384', __filename);
+// script/crypto-js/hmac-sha384.js
+
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+;(function (root, factory, undef) {
+	if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") {
+		// CommonJS
+		module.exports = exports = factory(require("./core"), require("./x64-core"), require("./sha512"), require("./sha384"), require("./hmac"));
+	} else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core", "./x64-core", "./sha512", "./sha384", "./hmac"], factory);
+	} else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+})(undefined, function (CryptoJS) {
+
+	return CryptoJS.HmacSHA384;
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=hmac-sha384.js.map
+        

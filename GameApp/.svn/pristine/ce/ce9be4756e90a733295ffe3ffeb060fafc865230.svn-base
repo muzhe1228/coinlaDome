@@ -1,0 +1,7 @@
+"use strict";
+cc._RF.push(module, 'e705d2KOqlGUK72up/wTt7H', 'socket');
+// script/socket.js
+
+"use strict";
+
+cc._RF.pop();

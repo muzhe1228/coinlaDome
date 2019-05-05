@@ -1,0 +1,50 @@
+.ProgressWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .Progress {
+    position: relative;
+    width: 80%;
+    background-color: #3a7d65;
+    height: 0.089888rem;
+    border-radius: 0.044944rem;
+    p {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background-color: #e3c877;
+      min-width: 0.089888rem;
+      border-radius: 0.089888rem;
+      transition: width 0.2s linear;
+      overflow: hidden;
+      span {
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 0.089888rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        animation: moveShade 2s infinite;
+      }
+    }
+  }
+  p {
+    font-size: 0.179775rem;
+  }
+}
+
+@keyframes moveShade {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 96%;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,132 @@
+
+.mobile_wrap {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #2a8d7c;
+}
+header {
+  height: 0.9rem;
+  background-color: rgba(20, 38, 92, 0.3);
+  width: 100%;
+  max-width: 750px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+header .logo {
+  width: 2.1rem;
+}
+.right_wrap {
+  display: flex;
+  align-items: center;
+}
+.right_wrap img {
+  width: 0.32rem;
+}
+.start_size {
+  font-size: 0.36rem;
+  color: #d6b155;
+  padding: 0 0.08rem;
+}
+.mobile_cont {
+  position: relative;
+  /* height: 8rem;
+  overflow: hidden; */
+}
+.mobile_cont .bg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.mobile_info {
+  position: relative;
+  z-index: 2;
+}
+.mobile_info .meinv {
+  width: 100%;
+  padding-top: 1.2rem;
+  text-align: right;
+}
+.mobile_info .meinv img {
+  width: 7.13rem;
+}
+.wenan {
+  position: absolute;
+  top: 5.04rem;
+  width: 100%;
+  text-align: center;
+}
+.wenan img {
+  width: 6.18rem;
+}
+.mobile_bot {
+  height: calc(100vh - 8rem);
+  min-height: 4.48rem;
+  width: 100%;
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  background: url("../images/mobile/桌子@3x.png") no-repeat top;
+  background-size: 100% 4.48rem;
+  z-index: 2;
+}
+.btn_group {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.62rem;
+}
+.btn_group p {
+  width: 3.64rem;
+  height: 0.88rem;
+  border-radius: 0.44rem;
+  background-color: #fce285;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.32rem;
+  color: #217a6b;
+  margin-bottom: 0.32rem;
+  /* font-weight: 700; */
+}
+.btn_group p:last-child {
+  background-color: #fff;
+}
+.btn_group p img {
+  width: 0.56rem;
+  height: 0.56rem;
+  margin-right: 0.08rem;
+}
+.bottom_left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.3rem;
+}
+.bottom_right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0.96rem;
+}
+.bottom_right_mid {
+  position: absolute;
+  right: 32px;
+  bottom: 0.6rem;
+  width: 6.24rem;
+}

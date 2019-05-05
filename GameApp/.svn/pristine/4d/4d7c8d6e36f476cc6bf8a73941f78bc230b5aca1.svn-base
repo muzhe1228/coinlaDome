@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_清空选择@2x",
+    "texture": "2bb0b69b-b447-4eae-8565-3f37037e04cc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      174,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      174,
+      64
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

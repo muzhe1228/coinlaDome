@@ -1,0 +1,1 @@
+export const MODEL_NAMES = 'model/MODEL_NAMES';

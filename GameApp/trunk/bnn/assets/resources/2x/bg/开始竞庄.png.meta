@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "22880182-5a54-46aa-8180-0061104d99aa",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "开始竞庄": {
+      "ver": "1.0.3",
+      "uuid": "81337ddd-0101-4b0c-bad8-0ac636b9850f",
+      "rawTextureUuid": "22880182-5a54-46aa-8180-0061104d99aa",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 0,
+      "width": 580,
+      "height": 135,
+      "rawWidth": 586,
+      "rawHeight": 135,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

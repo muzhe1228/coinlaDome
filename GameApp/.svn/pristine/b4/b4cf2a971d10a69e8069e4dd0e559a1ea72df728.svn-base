@@ -1,0 +1,33 @@
+"use strict";
+cc._RF.push(module, '37f6eePitlHw5Caev67WDQ9', 'pad-zeropadding');
+// script/pad-zeropadding.js
+
+"use strict";
+
+/**
+ * Zero padding strategy.
+ */
+CryptoJS.pad.ZeroPadding = {
+    pad: function pad(data, blockSize) {
+        // Shortcut
+        var blockSizeBytes = blockSize * 4;
+
+        // Pad
+        data.clamp();
+        data.sigBytes += blockSizeBytes - (data.sigBytes % blockSizeBytes || blockSizeBytes);
+    },
+
+    unpad: function unpad(data) {
+        // Shortcut
+        var dataWords = data.words;
+
+        // Unpad
+        var i = data.sigBytes - 1;
+        while (!(dataWords[i >>> 2] >>> 24 - i % 4 * 8 & 0xff)) {
+            i--;
+        }
+        data.sigBytes = i + 1;
+    }
+};
+
+cc._RF.pop();

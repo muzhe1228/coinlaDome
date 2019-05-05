@@ -1,0 +1,25 @@
+"use strict";
+cc._RF.push(module, 'c098aGiEspMSKmGieyLxb9L', 'format-openssl');
+// script/crypto-js/format-openssl.js
+
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+;(function (root, factory, undef) {
+	if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") {
+		// CommonJS
+		module.exports = exports = factory(require("./core"), require("./cipher-core"));
+	} else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core", "./cipher-core"], factory);
+	} else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+})(undefined, function (CryptoJS) {
+
+	return CryptoJS.format.OpenSSL;
+});
+
+cc._RF.pop();

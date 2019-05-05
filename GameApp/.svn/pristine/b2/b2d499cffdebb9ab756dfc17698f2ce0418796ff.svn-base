@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!--忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>鼎信投注</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./down_comm.css" />
+    <link rel="icon" type="image/*" href="./logo.png" />
+    <script src="./resize.js"></script>
+    <script src="./jquery-2.2.3.min.js"></script>
+  </head>
+  <body>
+    <main class="download_wrap">
+      <img class="bg left" src="./down_comm/left.png" alt="" />
+      <img class="bg right" src="./down_comm/right.png" alt="" />
+      <div class="wrap_all">
+        <div class="wrap">
+          <div class="border"></div>
+          <p class="logo">
+            <img src="./down_comm/logo.png" alt="" />
+          </p>
+          <p class="codeImg">
+            <img
+              id="codeImg"
+              src="https://tinywzj.com/source/pack/weixin/qrcode.php?link=https://tinywzj.com/app.php/389"
+              alt=""
+            />
+          </p>
+        </div>
+        <div class="intord">
+          <h2>币币PK</h2>
+          <p>扫描二维码下载</p>
+          <p>或用手机浏览器输入这个网址：https://tinywzj.com/app.php/389</p>
+        </div>
+        <div class="banben">
+          <p>1.1（Build 2019030501）- 9.85 MB</p>
+
+          <p>更新于：2019-04-03 14:59:51</p>
+        </div>
+        <a class="btn" id="text" href="###">下载安装</a>
+      </div>
+      <p class="tips">
+        请点击右上角在浏览器或Safari中打开
+        <span></span>
+      </p>
+    </main>
+  </body>
+  <script>
+    $(function() {
+      //获取自己的url
+      var codeURl = window.location.href;
+      if (is_weixn_qq()) {
+          //微信浏览器的话右上角提示浏览器或Safari中打开
+        $(".btn").attr("href", "####");
+        $(".tips").show();
+      } else {
+        if (isIos_And_Pc() == "android") {
+          //安卓下的下载地址
+          $(".btn").attr("href", "https://www.123210.co/data/dx-1.0.0.apk");
+        } else if (isIos_And_Pc() == "ios") {
+          // ios下的下载地址
+          $(".btn").attr(
+            "href",
+            "itms-services://?action=download-manifest&url=https://www.123210.co/data/dx.plist"
+          );
+        }
+      }
+      //设置PC端二维码
+      $("#codeImg").attr("src", "http://qr.liantu.com/api.php?text=" + codeURl);
+      function isIos_And_Pc() {
+        var u = navigator.userAgent,
+          app = navigator.appVersion;
+        var isAndroid = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if (isIOS) {
+          return "ios";
+        } else if (isAndroid) {
+          return "android";
+        } else {
+          return "pc";
+        }
+      }
+      //判断是否是微信或者QQ浏览器
+      function is_weixn_qq() {
+        var ua = navigator.userAgent.toLowerCase();
+        //   || ua.match(/QQ/i) == "qq"
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    });
+  </script>
+</html>

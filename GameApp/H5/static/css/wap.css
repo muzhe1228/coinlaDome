@@ -1,0 +1,486 @@
+a {
+    display: inline-block;
+  }
+  .color_3 {
+    color: #333 !important;
+  }
+  /******************* header *****************/
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #fff;
+  }
+  .header {
+    width: 17.74026rem;
+    height: 1.038961rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header .logo {
+    padding-left: 0.467532rem;
+  }
+  .header .logo img {
+    width: 2.467532rem;
+    height: 0.467532rem;
+    vertical-align: middle;
+  }
+  .header .right_nav {
+    display: flex;
+  }
+  .header .right_nav a {
+    margin-right: 0.467532rem;
+    font-size: 0.207792rem;
+    color: #000;
+  }
+  
+  main {
+    min-width: 17.74026rem;
+    margin: auto;
+    padding-top: 1.038961rem;
+  }
+  /********************** banner部分 ************************/
+  #banner {
+    width: 100%;
+    background: url(../images/newIndex/bg_banner.png) center no-repeat;
+    background-size: cover;
+  }
+  .banner {
+    width: 17.74026rem;
+    margin: auto;
+    display: flex;
+  }
+  .banner_left,
+  .banner_right {
+    width: 50%;
+    height: 7.792208rem;
+    position: relative;
+  }
+  .banSize {
+    margin-top: 1.298701rem;
+    margin-left: 1.558442rem;
+    height: 3.922078rem;
+  }
+  .banSize li:first-child {
+    margin-bottom: 0.311688rem;
+    width: 5.948052rem;
+  }
+  
+  .banSize li:nth-child(2) {
+    margin-bottom: 0.38961rem;
+    width: 3.077922rem;
+  }
+  .banSize li:nth-child(3) {
+    margin-bottom: 0.311688rem;
+    width: 3.428571rem;
+  }
+  .banSize li:nth-child(4) {
+    width: 4.961039rem;
+  }
+  .banSize li:last-child {
+    margin-top: 0.649351rem;
+    width: 3.168831rem;
+  }
+  .banSize li img {
+    width: 100%;
+  }
+  .q_code {
+    width: 2.311688rem;
+    height: 2.311688rem;
+    position: absolute;
+    right: 1.038961rem;
+    top: 2.233766rem;
+  }
+  .q_code img {
+    width: 100%;
+    height: 100%;
+  }
+  .banner_right img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /*************************** intord 游戏介绍部分 **********************************/
+  
+  #gameIntrod {
+    width: 100%;
+    position: relative;
+  }
+  .gameIntrod_lbg {
+    position: absolute;
+    left: 0;
+    top: 1.558442rem;
+    width: 1.922078rem;
+  }
+  .gameIntrod_rbg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1.922078rem;
+  }
+  .gameIntrod {
+    width: 17.74026rem;
+    height: 12.831169rem;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+  }
+  .intord_title {
+    text-align: center;
+    padding: 0.571429rem;
+  }
+  .intord_title img {
+    width: 6.207792rem;
+  }
+  .intord {
+    width: 14.818182rem;
+    height: 2.883117rem;
+    margin: 0 auto 0.571429rem auto;
+    font-size: 0.207792rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .intordSize {
+    width: 8.935065rem;
+  }
+  .intord .intordSize p {
+    font-size: 0.207792rem;
+    line-height: 0.415584rem;
+  }
+  .intord_nn {
+    background: url(../images/newIndex/bg_hxnn.png) no-repeat center;
+    background-size: cover;
+    padding-left: 4.025974rem;
+  }
+  .intord_jc {
+    background: url(../images/newIndex/bg_hxjc.png) no-repeat center;
+    background-size: cover;
+    padding-left: 2.805195rem;
+  }
+  .intord_db {
+    background: url(../images/newIndex/bg_yydb.png) no-repeat center;
+    background-size: cover;
+    padding-left: 4.025974rem;
+  }
+  
+  /*************************** Feature 游戏特色部分 **********************************/
+  #gameFeature {
+    width: 100%;
+    background-color: #f7f7f7;
+  }
+  .gameFeature {
+    background: url(../images/newIndex/feature.png) no-repeat top;
+    background-size: cover;
+    height: 4.155844rem;
+  }
+  .Feature_explain {
+    width: 14.805195rem;
+    margin: auto;
+    display: flex;
+    padding-top: 2.857143rem;
+  }
+  .Feature_explain li {
+    width: 4.935065rem;
+    height: 2.701299rem;
+    background-color: #ddc172;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Feature_explain li:nth-child(2) {
+    width: 4.935065rem;
+    height: 2.701299rem;
+    background-color: #cdb164;
+  }
+  .Feature_explain li img {
+    width: 1.324675rem;
+  }
+  .Feature_explain li p {
+    padding-left: 0.25974rem;
+  }
+  .Feature_explain li p span {
+    display: block;
+    font-size: 0.25974rem;
+    margin-bottom: 0.155844rem;
+  }
+  .Feature_explain li p strong {
+    display: block;
+    font-size: 0.311688rem;
+    font-weight: 700;
+    padding-bottom: 0.25974rem;
+  }
+  /*************************** Block Chain Competition 区块链竞彩 **********************************/
+  
+  #blockCompetition {
+    width: 100%;
+    padding-top: 2.025974rem;
+    background-color: #f7f7f7;
+  }
+  .blockCompetition {
+    width: 17.74026rem;
+    height: 11.636364rem;
+    margin: auto;
+  }
+  .block_title {
+    text-align: center;
+    padding-bottom: 0.571429rem;
+  }
+  .block_title img {
+    width: 6.168831rem;
+  }
+  .whatBlock,
+  .blockWhat {
+    width: 14.805195rem;
+    min-height: 4.077922rem;
+    border: 0.181818rem solid #d7d7d7;
+    margin: 0 auto 0.519481rem auto;
+    position: relative;
+  }
+  .BlockImg1 {
+    position: absolute;
+    left: 0.38961rem;
+    top: -0.493506rem;
+    width: 2.987013rem;
+    height: 3.688312rem;
+  }
+  .BlockImg2 {
+    position: absolute;
+    right: 0.38961rem;
+    bottom: -0.493506rem;
+    width: 2.987013rem;
+    height: 3.688312rem;
+  }
+  .blockSize {
+    margin-right: 3.428571rem;
+    padding: 0.38961rem 36px 0 36px;
+  }
+  .whatSize {
+    margin-left: 3.428571rem;
+    margin-right: 0;
+  }
+  .whatSize p {
+    text-indent: 0.415584rem;
+  }
+  .blockSize h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.467532rem;
+    color: #333;
+  }
+  .blockSize h2 span {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.103896rem;
+    width: 100%;
+    height: 0.233766rem;
+    background-color: #fdeec2;
+    z-index: -1;
+  }
+  .blockSize p {
+    font-size: 0.207792rem;
+    color: #666;
+    line-height: 0.467532rem;
+  }
+  
+  /*************************** Block Chain Competition 区块链竞彩 **********************************/
+  #gameAgent {
+    width: 100%;
+    background-color: #eaeaea;
+    position: relative;
+    min-height: 9.428571rem;
+    padding-bottom: 1.038961rem;
+  }
+  .agentBg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.025974rem;
+  }
+  .gameAgent {
+    width: 17.74026rem;
+    margin: auto;
+  }
+  .agent_title {
+    text-align: center;
+    padding: 0.597403rem 0;
+  }
+  .agent_title img {
+    width: 4.974026rem;
+  }
+  .agentList {
+    padding: 0 1.506494rem;
+    display: flex;
+  }
+  .agent_l ul {
+    display: flex;
+    margin-bottom: 0.25974rem;
+  }
+  .agent_l {
+    width: 50%;
+  }
+  .agent_l img {
+    margin-right: 0.207792rem;
+    width: 0.623377rem;
+  }
+  .agent_l p {
+    font-size: 0.207792rem;
+    line-height: 0.467532rem;
+    color: #666;
+  }
+  .agent_l p span {
+    font-size: 0.207792rem;
+  }
+  .agent_l h3 {
+    font-size: 0.311688rem;
+    line-height: 0.623377rem;
+  }
+  
+  /*************************** contactUs 联系我们 **********************************/
+  #contactUs {
+    width: 100%;
+    padding-bottom: 0.831169rem;
+    background-color: #f7f7f7;
+  }
+  .contactUs {
+    width: 17.74026rem;
+    position: relative;
+    margin: auto;
+  }
+  .us_title {
+    width: 4.285714rem;
+    height: 2.077922rem;
+    background-color: #ddc172;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.142857rem;
+    top: -1.038961rem;
+  }
+  .us_title img {
+    width: 3.402597rem;
+  }
+  .usUl {
+    display: flex;
+    width: 13.298701rem;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 2.025974rem;
+  }
+  .usUl img {
+    width: 2.285714rem;
+  }
+  
+  /*************************** footer 底部 **********************************/
+  footer {
+    width: 100%;
+    min-height: 4.155844rem;
+    background-color: #272728;
+  }
+  .footer {
+    width: 17.74026rem;
+    padding: 0 0.25974rem;
+    margin: auto;
+  }
+  .footer_title {
+    text-align: center;
+    font-size: 0.415584rem;
+    color: #b5b5b5;
+    padding: 0.649351rem 0;
+  }
+  .footer_title strong {
+    font-size: 0.415584rem;
+  }
+  .footer_wrap {
+    display: flex;
+    padding-bottom: 0.519481rem;
+    border-bottom: 0.012987rem solid #000;
+  }
+  .footer_wrap ul {
+    width: 50%;
+    display: flex;
+  }
+  .footer_l {
+    padding-top: 0.467532rem;
+  }
+  .footer_logo {
+    width: 3.857143rem;
+    height: 1.298701rem;
+    /* background-color: #debd63; */
+    margin-right: 0.779221rem;
+    text-align: center;
+    line-height: 1.298701rem;
+  }
+  .footer_logo img {
+    width: 2.467532rem;
+  }
+  .footer_l a,
+  .footer_group p {
+    display: block;
+    color: #b5b5b5;
+    font-size: 0.233766rem;
+    line-height: 0.428571rem;
+    cursor: pointer;
+  }
+  .footer_r {
+    justify-content: flex-end;
+  }
+  .footer_r li {
+    padding: 0 0.25974rem;
+  }
+  .footer_r .footer_Img {
+    padding-top: 0.909091rem;
+  }
+  .footer_r .footer_Img img {
+    width: 2.571429rem;
+  }
+  
+  .footer_group {
+    position: relative;
+  }
+  
+  .footer_group::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%;
+    width: 0.012987rem;
+    background-color: #686869;
+    opacity: 0.2;
+  }
+  .footer_l a:hover,
+  .footer_group p:hover {
+    color: #fff;
+  }
+  .footer_group p {
+    line-height: 0.61039rem;
+  }
+  .footer_group p img {
+    vertical-align: middle;
+    width: 0.415584rem;
+  }
+  .footer_r .footer_code {
+    padding-right: 0;
+  }
+  .footer_code img {
+    width: 1.844156rem;
+    height: 1.844156rem;
+  }
+  .copyright {
+    line-height: 0.649351rem;
+    text-align: center;
+    font-size: 0.155844rem;
+    color: #fff;
+  }
+  

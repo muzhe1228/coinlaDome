@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "筹码蒙版@2x",
+    "texture": "b67d31e9-048a-4645-af6c-e88073001d1f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      146,
+      750
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      146,
+      750
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

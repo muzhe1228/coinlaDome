@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white_title">#FFFFFF</color>
+    <color name="bg_main">#f7f7f7</color>
+    <color name="bg_main2">#f0f0f0</color>
+    <color name="iscur">#DEBD63</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_zb">#FFFFFF</color>
+    <color name="white_up_down">#FFFFFF</color>
+    <color name="white_press">#fafafa</color>
+    <color name="textcolor0">#454545</color>
+    <color name="textcolor1">#333333</color>
+    <color name="textcolor1_kline">#333333</color>
+    <color name="textcolor1_zb">#333333</color>
+    <color name="textcolor2">#666666</color>
+    <color name="textcolor2_zb">#666666</color>
+    <color name="textcolor3">#999999</color>
+    <color name="textcolor3_search">#999999</color>
+    <color name="textcolor3_klinex">#666666</color>
+    <color name="textcolor3_zb">#999999</color>
+    <color name="line_division">#eeeeee</color>
+    <color name="line_division_top">#dedede</color>
+    <color name="red">#F93C34</color>
+    <color name="green">#1dbc8c</color>
+    <color name="red_zb">#F93C34</color>
+    <color name="green_zb">#1dbc8c</color>
+    <color name="red_ani">#50F93C34</color>
+    <color name="green_ani">#501dbc8c</color>
+    <color name="blue">#007AFF</color>
+    <color name="white_point">#FFFFFF</color>
+    <color name="textcolor2_title">#666666</color>
+    <color name="white_login_solid">#FFFFFF</color>
+    <color name="white_login_strock">#dedede</color>
+    <color name="progress_bg">#dedede</color>
+    <color name="myclb">#FEFBF4</color>
+
+    <!--k-->
+    <!--字体颜色-->
+    <color name="axis_color">#666666</color>
+    <color name="chart_info_color">#C8DEBD63</color>
+    <color name="increasing_color1">#DEBD63</color>
+    <color name="increasing_color">#F93C34</color>
+    <color name="decreasing_color">#1dbc8c</color>
+    <!--曲线图描边颜色-->
+    <color name="normal_line_color">#DEBD63</color>
+    <!--平均线-->
+    <!--<color name="ave_color">#00BBBBBB</color>-->
+    <!--十字线下的textview背景色-->
+    <color name="marker_color">#333333</color>
+    <color name="marker_text_color">#FFFFFF</color>
+    <!--虚线-->
+    <color name="chart_grid_color">#00333333</color>
+    <color name="hint_color">#b5b5b5</color>
+
+    <color name="shadow">#60000000</color>
+    <!--曲线图十字线颜色-->
+    <color name="priceshizi">#666666</color>
+    <!--交叉点的颜色-->
+    <color name="pricepoint">#333333</color>
+    <color name="highlight_color">#333333</color>
+
+    <color name="transparency">#00000000</color>
+
+    <color name="ma5">#999999</color>
+    <color name="ma10">#debd63</color>
+    <color name="ma30">#bd10e0</color>
+
+    <!--<color name="highlight_color">#000000</color>-->
+
+    <!--资产分布饼状图-->
+    <color name="pie1">#d3758f</color>
+    <color name="pie2">#f3d999</color>
+    <color name="pie3">#a4d8c2</color>
+    <color name="pie4">#574e50</color>
+    <color name="pie5">#c6b38e</color>
+    <color name="pie6">#001752</color>
+    <color name="pie7">#f4e8c7</color>
+    <color name="pie8">#2f5791</color>
+    <color name="pie9">#b8d2c7</color>
+    <color name="pie10">#e02054</color>
+    <color name="pie0">#f5a623</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <!--新k-->
+    <!-- top -->
+    <color name="common_gray_bg">#F5F5F5</color>
+
+    <!-- text-->
+    <color name="text_color_common">#666666</color>
+    <color name="text_color_red">#FF0000</color>
+    <color name="text_color_orange">#FCAE05</color>
+    <color name="text_color_maroon">#CD0000</color>
+
+    <!-- common -->
+    <color name="common_1">#EEE9BF</color>
+    <color name="common_2">#C0FF3E</color>
+
+    <!-- chart -->
+    <color name="marker_bg">#1C232E</color>
+    <color name="marker_line_bg">#666666</color>
+    <color name="marker_text_bg">#666666</color>
+    <color name="border_color">#A7ADBC</color>
+    <color name="mine_label_txt">#A7ADBC</color>
+    <color name="minute_jizhun">#7F9976</color>
+    <color name="minute_blue">#00D0FC</color>
+    <color name="minute_yellow">#E7B448</color>
+    <color name="tip_bg">#f2f2f2</color>
+    <color name="bg_date_sign">#242a38</color>
+    <color name="recommend_text_grown">#BC966D</color>
+    <color name="bg_recommend_grown">#B89A74</color>
+    <color name="bg_grown">#AC885E</color>
+    <color name="textcolor_grown">#B29068</color>
+    <color name="bg_small_grown">#E4D3C0</color>
+    <color name="recommend_text_grown1">#b3936b</color>
+    <color name="bg_light_grown">#F6F3EF</color>
+    <color name="bg_deep_grown">#bc966d</color>
+    <color name="bg_grown1">#AD8A60</color>
+    <color name="clb_bg">#263037</color>
+    <color name="zb_title">#333333</color>
+    <color name="clb_title">#ffffff</color>
+    <color name="white_text">#ffffff</color>
+    <color name="bg_city">#E9E9E9</color>
+    <color name="line_division_clb">#dedede</color>
+    <color name="iscur_alph20">#20DEBD63</color>
+    <color name="transparent_f">#00ffffff</color>
+    <color name="bg_main_no_night">#f7f7f7</color>
+    <color name="textcolor2_no_night">#666666</color>
+    <color name="textcolor1_no_night">#333333</color>
+    <color name="light_gray">#CBAE77</color>
+    <color name="finish_gray">#AAAAAA</color>
+    <color name="brown_text_no_night">#946b21</color>
+    <color name="white_no_night">#FFFFFF</color>
+    <color name="line_division_top_no_night">#dedede</color>
+    <color name="blue_deep">#5e68f6</color>
+    <color name="blue_light">#4493ed</color>
+    <color name="textcolor_white_iscur">#ffffff</color>
+
+    <!-- <color name="ma5">#823E66</color>
+     <color name="ma10">#B99C7A</color>
+     <color name="ma20">#3C7193</color>
+     <color name="ma30">#7F9976</color>
+
+     <color name="increasing_color">#CD2626</color>
+     <color name="decreasing_color">#006400</color>-->
+    <color name="purple01">#9933CC</color>
+
+
+
+</resources>

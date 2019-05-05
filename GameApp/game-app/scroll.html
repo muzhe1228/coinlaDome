@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无缝滚动</title>
+</head>
+<style type="text/css">
+    .row{
+        width: 1298px;
+        height: 400px;
+        border: 1px solid;
+        box-shadow:2px 2px 2px #000;
+        overflow: hidden;
+    }
+    .box{
+        position: relative;
+    }
+    .box1,.box2{
+        width: 1298px;
+        position: absolute;
+    }
+    .box2{
+        left:1298px;
+    }
+    img{
+        float: left;
+    }
+</style>
+<body>
+    <div class="row">
+        <div class="box" id="box">
+            <div class="box1" id="box1">
+              移动端原生纯js文字向左无缝滚动marquee特效移动端原生纯js文字向左无缝滚动marquee特效移动端原生纯js文字向左无缝滚动marquee特效
+            </div>
+            <div class="box2" id="box2">
+              移动端原生纯js文字向左无缝滚动marquee特效移动端原生纯js文字向左无缝滚动marquee特效移动端原生纯js文字向左无缝滚动marquee特效
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        var _box1 = document.getElementById("box1");
+        var _box2 = document.getElementById("box2");
+        var x = 0;
+        var fun = function(){
+            _box1.style.left = x + 'px';
+            _box2.style.left = (x +1298) + 'px';
+            x--;
+            if((x +1298) == 0){
+                x = 0;
+            }
+        }
+        setInterval(fun,10);
+    }
+</script>
+</html>

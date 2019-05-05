@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg_右侧栏@2x",
+    "texture": "3c9b1eef-2aaa-4265-bbe0-819f28d27709",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      147,
+      750
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      147,
+      750
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

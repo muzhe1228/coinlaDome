@@ -1,0 +1,46 @@
+"use strict";
+cc._RF.push(module, '291bftX9OBPh48AajxubnTO', 'pad-iso97971');
+// script/crypto-js/pad-iso97971.js
+
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+;(function (root, factory, undef) {
+	if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") {
+		// CommonJS
+		module.exports = exports = factory(require("./core"), require("./cipher-core"));
+	} else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core", "./cipher-core"], factory);
+	} else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+})(undefined, function (CryptoJS) {
+
+	/**
+  * ISO/IEC 9797-1 Padding Method 2.
+  */
+	CryptoJS.pad.Iso97971 = {
+		pad: function pad(data, blockSize) {
+			// Add 0x80 byte
+			data.concat(CryptoJS.lib.WordArray.create([0x80000000], 1));
+
+			// Zero pad the rest
+			CryptoJS.pad.ZeroPadding.pad(data, blockSize);
+		},
+
+		unpad: function unpad(data) {
+			// Remove zero padding
+			CryptoJS.pad.ZeroPadding.unpad(data);
+
+			// Remove one more byte -- the 0x80 byte
+			data.sigBytes--;
+		}
+	};
+
+	return CryptoJS.pad.Iso97971;
+});
+
+cc._RF.pop();

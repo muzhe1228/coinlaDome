@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg_msgopen",
+    "texture": "5ecddd97-45cf-4566-be24-d6c4d1412a7e",
+    "atlas": "",
+    "rect": [
+      2,
+      6,
+      36,
+      27
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      40,
+      40
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

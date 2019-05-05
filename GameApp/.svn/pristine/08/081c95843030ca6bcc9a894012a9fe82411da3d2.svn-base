@@ -1,0 +1,4 @@
+<res>
+   <item name="comp/bg.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=34,14,12,11" picType="0" scale="0"/>
+   <item name="comp/blank.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=1,1,1,1" picType="0" scale="0"/>
+</res>

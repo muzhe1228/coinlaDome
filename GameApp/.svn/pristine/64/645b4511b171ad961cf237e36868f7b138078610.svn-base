@@ -1,0 +1,92 @@
+2019-02-20T09:42:49.459Z - normal: Load ~/.CocosCreator/settings.json
+2019-02-20T09:42:50.591Z - normal: Initializing Asset Database
+2019-02-20T09:42:50.591Z - normal: checking language setting...
+2019-02-20T09:42:50.591Z - normal: Language: zh
+2019-02-20T09:42:51.152Z - success: preview server running at http://localhost:7456
+2019-02-20T09:42:51.154Z - success: protocol editor-framework registered
+2019-02-20T09:42:51.154Z - success: protocol app registered
+2019-02-20T09:42:51.154Z - success: protocol theme registered
+2019-02-20T09:42:51.154Z - success: protocol packages registered
+2019-02-20T09:42:51.154Z - success: protocol uuid registerred
+2019-02-20T09:42:51.154Z - success: protocol db registerred
+2019-02-20T09:42:51.154Z - success: protocol thumbnail registerred
+2019-02-20T09:42:51.154Z - success: protocol unpack registerred
+2019-02-20T09:42:51.154Z - success: protocol disable-commonjs registerred
+2019-02-20T09:42:51.310Z - normal: connected!
+2019-02-20T09:42:51.312Z - normal: Check project C:\Users\24893\Desktop\gamesCode\GameApp\niuniu
+2019-02-20T09:42:51.316Z - normal: Initializing project C:\Users\24893\Desktop\gamesCode\GameApp\niuniu
+2019-02-20T09:42:51.888Z - normal: Initializing Cocos2d
+2019-02-20T09:42:52.501Z - normal: Initializing engine extends
+2019-02-20T09:42:52.517Z - normal: Loading editor/builtin packages from C:\CocosCreator\resources\app.asar\editor\builtin
+2019-02-20T09:42:52.517Z - normal: Loading builtin packages from C:\CocosCreator\resources\builtin
+2019-02-20T09:42:53.017Z - success: assets loaded
+2019-02-20T09:42:53.017Z - success: asset-db-debugger loaded
+2019-02-20T09:42:53.057Z - success: builder loaded
+2019-02-20T09:42:53.057Z - success: code-editor loaded
+2019-02-20T09:42:53.110Z - success: cocos-analytics loaded
+2019-02-20T09:42:53.110Z - success: color-picker loaded
+2019-02-20T09:42:53.206Z - success: console loaded
+2019-02-20T09:42:53.206Z - success: google-play-instant loaded
+2019-02-20T09:42:53.299Z - success: fb-instant-games loaded
+2019-02-20T09:42:53.300Z - success: jsb-adapter loaded
+2019-02-20T09:42:53.305Z - success: google-instant-games loaded
+2019-02-20T09:42:53.305Z - success: oppo-runtime loaded
+2019-02-20T09:42:53.406Z - success: hierarchy loaded
+2019-02-20T09:42:53.406Z - success: package-manager loaded
+2019-02-20T09:42:53.513Z - success: inspector loaded
+2019-02-20T09:42:53.513Z - success: qqplay-adapter loaded
+2019-02-20T09:42:53.513Z - success: keystore loaded
+2019-02-20T09:42:53.513Z - success: sdkbox loaded
+2019-02-20T09:42:53.544Z - success: node-library loaded
+2019-02-20T09:42:53.544Z - success: tester loaded
+2019-02-20T09:42:53.762Z - success: package-asset loaded
+2019-02-20T09:42:53.762Z - success: ui-grid loaded
+2019-02-20T09:42:53.934Z - success: preferences loaded
+2019-02-20T09:42:53.934Z - success: ui-kit-preview-extra loaded
+2019-02-20T09:42:53.950Z - success: project-exporter loaded
+2019-02-20T09:42:53.950Z - success: ui-kit-preview loaded
+2019-02-20T09:42:53.965Z - success: project-importer loaded
+2019-02-20T09:42:53.965Z - success: ui-kit loaded
+2019-02-20T09:42:53.981Z - success: project-settings loaded
+2019-02-20T09:42:53.981Z - success: ui-tree loaded
+2019-02-20T09:42:53.981Z - success: scene loaded
+2019-02-20T09:42:53.981Z - success: vivo-runtime loaded
+2019-02-20T09:42:53.981Z - success: simulator-debugger loaded
+2019-02-20T09:42:53.981Z - success: weapp-adapter loaded
+2019-02-20T09:42:53.981Z - success: sprite-editor loaded
+2019-02-20T09:42:53.981Z - success: store loaded
+2019-02-20T09:42:53.997Z - success: timeline loaded
+2019-02-20T09:42:54.517Z - normal: Loading packages
+2019-02-20T09:42:54.521Z - normal: Watching packages
+2019-02-20T09:42:54.955Z - normal: Run Application
+2019-02-20T09:43:00.199Z - normal: Modified global variable while loading disable-commonjs://C:\Users\24893\Desktop\gamesCode\GameApp\niuniu\assets\script\jsencrypt.min.js: JSEncrypt
+Before: function JSEncrypt(options) {
+        options = options || {};
+        this.default_key_size = parseInt(options.default_key_size, 10) || 1024;
+        this.default_public_exponent = options.default_public_exponent || "010001"; // 65537 default openssl public exponent for rsa key type
+        this.log = options.log || false;
+        // The private and public key.
+        this.key = null;
+    }
+After: function t(t){t=t||{},this.default_key_size=parseInt(t.default_key_size,10)||1024,this.default_public_exponent=t.default_public_exponent||"010001",this.log=t.log||!1,this.key=null}
+2019-02-20T09:43:00.247Z - failed: load script [./jsencrypt.min] failed : Error: Cannot find module './jsencrypt.min'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (C:\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.s._resolveFilename (C:\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:941)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (C:\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:589)
+    at C:\Users\24893\Desktop\gamesCode\GameApp\niuniu\temp\quick-scripts\assets\script\funcComm.js:1:350
+    at __define (C:\Users\24893\Desktop\gamesCode\GameApp\niuniu\temp\quick-scripts\assets\script\funcComm.js:12:1)
+    at C:\Users\24893\Desktop\gamesCode\GameApp\niuniu\temp\quick-scripts\assets\script\funcComm.js:98:13
+2019-02-20T09:43:00.437Z - error: Property 'game-controller.MainWorld' must define at least one of 'default', 'get' or 'set'.
+    at Object.cc.errorID (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at Object.exports.preprocessAttrs (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\preprocess-class.js:212:36)
+    at declareProperties (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:642:28)
+    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:685:17)
+    at __define (C:\Users\24893\Desktop\gamesCode\GameApp\niuniu\temp\quick-scripts\assets\script\game-controller.js:21:4)
+    at C:\Users\24893\Desktop\gamesCode\GameApp\niuniu\temp\quick-scripts\assets\script\game-controller.js:56:13
+    at Object.<anonymous> (C:\Users\24893\Desktop\gamesCode\GameApp\niuniu\temp\quick-scripts\assets\script\game-controller.js:63:11)
+    at Object.<anonymous> (C:\Users\24893\Desktop\gamesCode\GameApp\niuniu\temp\quick-scripts\assets\script\game-controller.js:66:3)
+    at Module._compile (module.js:571:32)

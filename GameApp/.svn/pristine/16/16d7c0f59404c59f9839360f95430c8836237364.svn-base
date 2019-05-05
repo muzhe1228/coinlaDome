@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "时间倒计时_亮2@3x",
+    "texture": "d43b4673-5b78-4554-a745-61f4ba08f37f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      177,
+      177
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      177,
+      177
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "b354d305-6ecc-49ac-a774-640e29f21602",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "等待开奖": {
+      "ver": "1.0.3",
+      "uuid": "37528b83-2c91-4839-a8aa-74a51953e1d9",
+      "rawTextureUuid": "b354d305-6ecc-49ac-a774-640e29f21602",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 317,
+      "height": 74,
+      "rawWidth": 317,
+      "rawHeight": 74,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

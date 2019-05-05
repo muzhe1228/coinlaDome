@@ -1,0 +1,172 @@
+牛牛接口
+base url：192.168.10.200:7001/hns
+
+
+名称：	[加密]十倍牛牛房间列表
+地址：	/niuniu/selectTenMultipleRoomList
+参数：	(required：false) page: 起始页
+		(required：false) size: 记录数
+返回：	{
+			list:[
+				roomId:	房间id
+				roomNumber:	房间号
+				roomType: 房间类型（0-新手，1-中级，2-高级）
+				paySetting: 玩法设置（0-平倍牛牛,1-十倍牛牛)
+				maxBets: 最大参与金额
+				minBets: 最小参与金额
+				bottomBets: 底注
+				peopleNumber: 在线人数
+				roomStatus: 房间状态 (0-下注中,1-封盘,2-开奖,3-竞庄,4-上庄,5-重新开盘)
+			]
+		}
+
+
+名称：	[加密]平倍牛牛房间列表
+地址：	/niuniu/selectFlatMultipleRoomList
+参数：	(required：false) page: 起始页
+		(required：false) size: 记录数
+返回：	{
+			list:[
+				roomId:	房间id
+				roomNumber:	房间号
+				roomType: 房间类型（0-新手，1-中级，2-高级）
+				paySetting: 玩法设置（0-平倍牛牛,1-十倍牛牛)
+				maxBets: 最大参与金额
+				minBets: 最小参与金额
+				bottomBets: 底注
+				peopleNumber: 在线人数
+				roomStatus: 房间状态 (0-下注中,1-封盘,2-开奖,3-竞庄,4-上庄,5-重新开盘)
+			]
+		}
+
+
+名称：	[加密]快速开始
+地址：	/niuniu/selectRoom
+参数：	(required：true) token: 用户token
+		(required：false) currencyType: 币种类型
+返回：	{
+			roomId:	房间id
+			roomNumber:	房间号
+			roomType: 房间类型（0-新手，1-中级，2-高级）
+			paySetting: 玩法设置（0-平倍牛牛,1-十倍牛牛)
+			maxBets: 最大参与金额
+			minBets: 最小参与金额
+			bottomBets: 底注
+		}
+
+
+名称：	[加密]可押注金额列表
+地址：	/niuniu/findBetsList
+参数：	(required：true) roomId: 房间id
+返回：	[
+			roomId:	房间id
+			bets:	押注金额
+			logo: 	图片
+		]
+				
+
+名称：	[加密]竞庄倍数列表
+地址：	/niuniu/findMultipleList
+参数：	(required：true) roomId: 房间id
+返回：	[
+			roomId:	房间id
+			multipleId:	编号
+			multiple: 	倍数（百分比）
+		]
+
+
+名称：	[加密]牛牛竞庄信息
+地址：	/niuniu/selectContendBanker
+参数：	(required：false) token: 用户token
+		(required：true) roomId: 房间id
+		(required：false) currencyType: 币种类型
+返回：	{
+			userId:	用户id
+			head:	头像
+			nick: 昵称
+			lockBets: 竞庄金额
+		}	
+
+
+名称：	[加密]牛牛庄信息
+地址：	/niuniu/selectBanker
+参数：	(required：false) token: 用户token
+		(required：true) roomId: 房间id
+返回：	{
+			userId:	用户id
+			head:	头像
+			nick: 昵称
+			remain: 连庄数
+			maxRemain: 最大连庄数
+			lockBets: 庄金额
+		}	
+
+
+名称：	[加密]竞庄
+地址：	/niuniu/competeBanker
+参数：	(required：true) token: 用户token
+		(required：true) roomId: 房间id
+		(required：true) multipleId: 倍数id
+		(required：false) currencyType: 币种类型
+返回：	boolean	
+
+
+名称：	[加密]下注
+地址：	/niuniu/bottomPour
+参数：	(required：true) token: 用户token
+		(required：true) roomId: 房间id
+		(required：true) positionId: [位置(1-天，2-地，3-玄)]
+		(required：true) currencyNumber: [下注数量]
+返回：	boolean			
+
+
+名称：	[加密]查询四个位置
+地址：	/niuniu/selectRoomByRoomId
+参数：	(required：true) token: 用户token
+		(required：true) roomId: 房间id
+返回：	{
+			totalBets:	冻结金额
+			lockBets:	下注金额
+			list: [
+					myBets:我的该位置总下注额
+					myLockBets:我的该位置冻结下注额
+					positionType:位置类型（0-庄,1-天,2-地,3-玄）
+					positionAssets:该位置下注总金额
+				] 位置下注情况
+		}		
+
+名称：	[加密]哈希牛牛路子
+地址：	/niuniu/findWay
+参数：	(required：false) token: 用户token
+		(required：true) roomId: 房间id
+		(required：false) page: 页码
+		(required：false) pageSize: 每页条数
+返回：	{
+			list: [
+					wayId: 编号
+					roomId: 房间id
+					blockId: 区块id
+					hash: hash
+					cardBanker: 庄家牌
+					cardSky: 天位牌
+					cardLand: 地位牌
+					cardMysterious: 玄位牌
+					niuBanker: 庄家牛结果
+					niuSky: 天位牛结果
+					niuLand: 地位牛结果
+					niuMysterious: 玄位牛结果
+					niuNumBanker: 庄家牛点数
+					niuNumSky: 天位牛点数
+					niuNumLand: 地位牛点数
+					niuNumMysterious: 玄位牛点数
+				] 
+		}		
+
+
+
+名称：	[加密]发送消息
+地址：	/niuniu/sendChat
+参数：	(required：true) token: 用户token
+		(required：true) roomId: 房间id
+		(required：true) content: 内容
+返回：	boolean	

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ben_jZhuang",
+    "texture": "1abba7f8-beb7-475f-b90e-4117d55c5afc",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      174,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      174,
+      64
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

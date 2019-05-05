@@ -1,0 +1,186 @@
+window.__require = function e(t, n, r) {
+  function s(o, u) {
+    if (!n[o]) {
+      if (!t[o]) {
+        var b = o.split("/");
+        b = b[b.length - 1];
+        if (!t[b]) {
+          var a = "function" == typeof __require && __require;
+          if (!u && a) return a(b, !0);
+          if (i) return i(b, !0);
+          throw new Error("Cannot find module '" + o + "'");
+        }
+      }
+      var f = n[o] = {
+        exports: {}
+      };
+      t[o][0].call(f.exports, function(e) {
+        var n = t[o][1][e];
+        return s(n || e);
+      }, f, f.exports, e, t, n, r);
+    }
+    return n[o].exports;
+  }
+  var i = "function" == typeof __require && __require;
+  for (var o = 0; o < r.length; o++) s(r[o]);
+  return s;
+}({
+  "event-listener": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "838f0LQFkpFtrDP9sw4Nas2", "event-listener");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var EventListener = function EventListener(obj) {
+      var Register = {};
+      obj.on = function(name, method) {
+        Register.hasOwnProperty(name) || (Register[name] = []);
+        Register[name].push(method);
+      };
+      obj.fire = function(name) {
+        if (Register.hasOwnProperty(name)) {
+          var handlerList = Register[name];
+          for (var i = 0; i < handlerList.length; i++) {
+            var handler = handlerList[i];
+            var args = [];
+            for (var j = 1; j < arguments.length; j++) args.push(arguments[j]);
+            handler.apply(this, args);
+          }
+        }
+      };
+      obj.off = function(name, method) {
+        if (Register.hasOwnProperty(name)) {
+          var handlerList = Register[name];
+          for (var i = 0; i < handlerList.length; i++) handlerList[i] === method && handlerList.splice(i, 1);
+        }
+      };
+      obj.destroy = function() {
+        Register = {};
+      };
+      return obj;
+    };
+    exports.default = EventListener;
+    module.exports = exports["default"];
+    cc._RF.pop();
+  }, {} ],
+  "game-controller": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "b0b8834KH1HHaimk3LRvjZ6", "game-controller");
+    "use strict";
+    var _global = require("./global");
+    var _global2 = _interopRequireDefault(_global);
+    var _eventListener = require("./event-listener");
+    var _eventListener2 = _interopRequireDefault(_eventListener);
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {
+        default: obj
+      };
+    }
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        MainWorld: {}
+      },
+      onLoad: function onLoad() {
+        _global2.default.eventlistener = (0, _eventListener2.default)({});
+        _global2.default.eventlistener.on("login", this.Login);
+      },
+      Login: function Login(uid) {
+        cc.log("button click = " + uid);
+      },
+      start: function start() {}
+    });
+    cc._RF.pop();
+  }, {
+    "./event-listener": "event-listener",
+    "./global": "global"
+  } ],
+  global: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "407d3vgHypGlYRmMtpMfdlO", "global");
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var global = {};
+    exports.default = global;
+    module.exports = exports["default"];
+    cc._RF.pop();
+  }, {} ],
+  "main-world": [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "c1ac9Kx19hNc4ax5rYOb0t7", "main-world");
+    "use strict";
+    var _global = require("./global");
+    var _global2 = _interopRequireDefault(_global);
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {
+        default: obj
+      };
+    }
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        xiazhuPrefab: {
+          default: null,
+          type: cc.Prefab
+        }
+      },
+      onLoad: function onLoad() {
+        var xiazhu = cc.instantiate(this.xiazhuPrefab);
+        xiazhu.parent = this.node;
+      }
+    });
+    cc._RF.pop();
+  }, {
+    "./global": "global"
+  } ],
+  main: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "55601hkV3BI/qtYbdw27BDg", "main");
+    "use strict";
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        mainPrefab: {
+          default: [],
+          type: cc.Prefab
+        }
+      },
+      onLoad: function onLoad() {
+        var mainWorld = cc.instantiate(this.mainPrefab[0]);
+        mainWorld.parent = this.node;
+      },
+      start: function start() {}
+    });
+    cc._RF.pop();
+  }, {} ],
+  xiazhu: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "7af24JPvhRPwq8tHr0FgtUT", "xiazhu");
+    "use strict";
+    var _global = require("./global");
+    var _global2 = _interopRequireDefault(_global);
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {
+        default: obj
+      };
+    }
+    cc.Class({
+      extends: cc.Component,
+      properties: {},
+      start: function start() {},
+      buttonClick: function buttonClick(event, constomData) {
+        cc.log(constomData);
+        _global2.default.eventlistener.fire("login", "\u4e0b\u6ce8111111");
+        cc.log("yes");
+        alert("111");
+      }
+    });
+    cc._RF.pop();
+  }, {
+    "./global": "global"
+  } ]
+}, {}, [ "event-listener", "game-controller", "global", "main-world", "main", "xiazhu" ]);
+//# sourceMappingURL=project.dev.js.map

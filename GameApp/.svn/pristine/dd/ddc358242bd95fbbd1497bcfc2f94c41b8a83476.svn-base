@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "牛牛@2x",
+    "texture": "fce985f0-6297-4384-bcf3-8035069b0359",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      147,
+      56
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      147,
+      56
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+#box {
+  /* 父容器设置宽度, 并超出部分不显示 */
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  font-size: .613333rem;
+}

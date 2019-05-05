@@ -1,0 +1,20 @@
+export default {
+  TokenTrading : '币币交易',
+  Assets : '资产管理',
+  Mining : '交易挖矿',
+  Help : '帮助',
+  LogIn : '登录',
+  SignUp : '注册',
+  SignUpFree : '免费注册',
+  DownloadAPP : 'APP下载',
+  Deposit : '充值',
+  Withdraw : '提现',
+  Available : '可用余额',
+  DepositRecords : '充值历史',
+  WithdrawalRecords : '提现历史',
+  Address : '地址',
+  Fee : '手续费',
+  GameRecordTitle : '游戏记录',
+  HeadImg : "头像",
+  Explain: "说明"
+}

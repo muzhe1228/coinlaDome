@@ -1,0 +1,7 @@
+export const SET_USERINFO = "SET_USERINFO";
+export const SET_TOKEN = "SET_TOKEN";
+export const SET_PKNUM = "SET_PKNUM";
+export const SET_ALLPKNUM = "SET_ALLPKNUM";
+export const SET_ISSHOWLOGIN = "SET_ISSHOWLOGIN";
+export const SET_MESSAGE_UNREAD_NUM = "SET_MESSAGE_UNREAD_NUM";
+export const SET_LOCAL_GAME_NAME = "SET_LOCAL_GAME_NAME";

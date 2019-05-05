@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba54cf74-7d74-41bc-be90-f70dbdc4c342" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/APi/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/APi/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Axios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatMsg/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatMsg/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatMsg/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatMsg/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FengPan/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FengPan/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FengPan/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FengPan/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftNav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftNav/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftNav/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LeftNav/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/ExchangeCoin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/ExchangeCoin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/Explain/Explain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/Explain/Explain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/Explain/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/Explain/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/HomeRule/GameRule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/HomeRule/GameRule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/HomeRule/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/HomeRule/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/ModalBtn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/ModalBtn/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/TopUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/TopUp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/Withdrawal/PassWordAlert/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/Withdrawal/PassWordAlert/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/Withdrawal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/Withdrawal/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/Withdrawal/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/Withdrawal/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MsgSlider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MsgSlider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MsgSlider/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MsgSlider/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProgressD/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProgressD/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProgressD/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProgressD/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Socket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Socket/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/YaZhu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/YaZhu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/components/CenterItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/components/CenterItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/components/MainHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/components/MainHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/components/SubHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/components/SubHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/store/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/store/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/store/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/scrollH/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scrollH/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_bch_selected@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_bch_unselect@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_btc_selected2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_btc_selected@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_btc_unselect2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_btc_unselect@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_eos_selected@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_eos_unselect@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_eth_selected@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/iconImg/icons/@3x/icon_coin_eth_unselect@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/ExchangeCoin/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/ExchangeCoin/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/HomeRule/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Alert/HomeRule/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/ScreeningAlert/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Alert/ScreeningAlert/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/ScreeningAlert/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Alert/ScreeningAlert/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/TopUp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/TopUp/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/Withdrawal/PassWordAlert/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/Withdrawal/PassWordAlert/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/Withdrawal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/Withdrawal/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/demoAlert/GameInstructions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/demoAlert/GameInstructionsStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/demoAlert/RuleInstructions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Alert/demoAlert/RuleInstructionsStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App/SubIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App/SubIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BullFight/components/CItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BullFight/components/CItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BullFight/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BullFight/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/GameRecord/components/ChildItemNiu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GameRecord/components/ChildItemNiu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/GameRecord/components/GameRecordItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GameRecord/components/GameRecordItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/GameRecord/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GameRecord/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/GameRecord/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/GameRecord/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HxNiu/components/HxNiuJZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HxNiu/components/HxNiuJZ.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HxNiu/components/LuZi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HxNiu/components/LuZi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HxNiu/components/SizeItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HxNiu/components/SizeItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HxNiu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HxNiu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HxNiu/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HxNiu/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Hxjc/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hxjc/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Hxjc/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Hxjc/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MessageCenter/MessageCenterItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MessageCenter/MessageCenterItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MessageCenter/MessageDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MessageCenter/MessageDetail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MessageCenter/MessageDetail/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MessageCenter/MessageDetail/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MessageCenter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MessageCenter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Payments/PaymentsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Payments/PaymentsItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Payments/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Payments/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Payments/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Payments/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SecuritySetting/ResetLoginPassword/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SecuritySetting/ResetLoginPassword/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SecuritySetting/ResetLoginPassword/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SecuritySetting/ResetLoginPassword/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SecuritySetting/ResetMoneyPassword/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SecuritySetting/ResetMoneyPassword/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SecuritySetting/ResetMoneyPassword/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SecuritySetting/ResetMoneyPassword/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SecuritySetting/TiXianCode/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SecuritySetting/TiXianCode/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TaskCenter/components/SingleCentertem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TaskCenter/components/SingleCentertem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TaskCenter/components/SingleItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TaskCenter/components/SingleItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TaskCenter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TaskCenter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TaskCenter/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TaskCenter/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/UserInfo/UpdateName/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserInfo/UpdateName/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/UserInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserInfo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/UserInfo/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserInfo/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Yydb/components/CItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Yydb/components/CItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Yydb/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Yydb/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Yydb/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Yydb/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Yydb_id/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Yydb_id/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Yydb_id/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Yydb_id/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket文档" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/iconfont/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/iconfont/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/iconfont/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/iconfont/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/iconfont/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/iconfont/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/reset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Header/components/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="263" column="22" selection-start-line="263" selection-start-column="19" selection-end-line="263" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/filter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+              <folding>
+                <element signature="n#!!block;n#showScreen#0" />
+                <element signature="n#!!block;n#hashSplic#0" />
+                <element signature="n#!!block;n#timerType#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Axios/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1181">
+              <caret line="695" column="22" lean-forward="true" selection-start-line="695" selection-start-column="22" selection-end-line="695" selection-end-column="22" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#21#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/APi/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="28" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Header/style.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="262" column="22" lean-forward="true" selection-start-line="256" selection-start-column="2" selection-end-line="262" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minxin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/minxin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>encryption</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/Header/components/Login.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="273" />
+    <option name="y" value="157" />
+    <option name="width" value="1234" />
+    <option name="height" value="730" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="game-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="APi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="Axios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\24893\Desktop\gamesCode\game-app\node_modules\eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\24893\Desktop\gamesCode\game-app\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba54cf74-7d74-41bc-be90-f70dbdc4c342" name="Default" comment="" />
+      <created>1546067309350</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546067309350</updated>
+      <workItem from="1546067310553" duration="7486000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7486000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/common/minxin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="262" column="22" lean-forward="true" selection-start-line="256" selection-start-column="2" selection-end-line="262" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/APi/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="28" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="n#!!block;n#showScreen#0" />
+            <element signature="n#!!block;n#hashSplic#0" />
+            <element signature="n#!!block;n#timerType#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1181">
+          <caret line="695" column="22" lean-forward="true" selection-start-line="695" selection-start-column="22" selection-end-line="695" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#21#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Axios/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="263" column="22" selection-start-line="263" selection-start-column="19" selection-end-line="263" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

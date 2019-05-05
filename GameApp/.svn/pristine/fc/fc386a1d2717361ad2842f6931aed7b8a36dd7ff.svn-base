@@ -1,0 +1,50 @@
+.download_wrap {
+  width: 100vw;
+  max-width: 750px;
+  height: 100vh;
+  /* background: url(../images/download/bg.jpg) no-repeat center;
+  background-size: 100% 100%; */
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.download_bg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.download_title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.88rem;
+  font-size: 0.28rem;
+  color: #fff;
+  line-height: 0.88rem;
+  text-align: center;
+  background-color: rgba(11, 21, 31, 0.8);
+}
+.downHanle {
+  position: absolute;
+  left: 0.62rem;
+  top: 38%;
+}
+.downBtn {
+  display: block;
+  width: 2.54rem;
+  height: 0.72rem;
+}
+.downBtn img {
+  width: 100%;
+}
+.downCode {
+  width: 2.54rem;
+  height: 2.54rem;
+  margin-top: 0.24rem;
+}
+.downCode img {
+  width: 100%;
+}

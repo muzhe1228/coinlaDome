@@ -1,0 +1,217 @@
+.grecaptcha-badge {
+  display: none;
+}
+.register {
+  min-height: 100vh;
+  background-color: #e2f0fd;
+  max-width: 750px;
+  margin: auto;
+}
+.top_bg {
+  width: 100%;
+  height: 3.85rem;
+  background: url("../images/header.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.wrapper {
+  margin: 0.3rem auto 0.32rem auto;
+  width: 6.8rem;
+  height: 8.14rem;
+  background: url("../images/bg_login@3x.png") no-repeat;
+  background-size: 100% 100%;
+}
+.wrap_top {
+  text-align: center;
+  width: 100%;
+  height: 1.7rem;
+}
+.wrap_top .logo {
+  margin-top: 0.5rem;
+  width: 5.76rem;
+}
+
+.wrap-from {
+  width: 100%;
+  padding-top: 0.32rem;
+}
+.tips {
+  text-align: center;
+  font-size: 0.28rem;
+  color: #455dd4;
+  padding-bottom: 0.5rem;
+}
+.inp_group {
+  position: relative;
+  width: 5.86rem;
+  height: 0.8rem;
+  background: url("../images/bg_input@3x.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 0.24rem auto;
+}
+.inp_group .inp {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding-left: 1.04rem;
+  font-size: 0.32rem;
+  color: #333c8e;
+}
+.inp_group .icon {
+  width: 1.04rem;
+  height: 100%;
+}
+.inp_group .icon_email {
+  background: url(../images/icon_email@3x.png) no-repeat center;
+  background-size: 0.48rem 0.48rem;
+}
+.inp_group .icon_code {
+  background: url(../images/icon_code@3x.png) no-repeat center;
+  background-size: 0.48rem 0.48rem;
+}
+.inp_group .icon_pwd {
+  background: url(../images/icon_pwd@3x.png) no-repeat center;
+  background-size: 0.48rem 0.48rem;
+}
+.inp_group .icon_invite {
+  background: url(../images/icon_invite@3x.png) no-repeat center;
+  background-size: 0.48rem 0.48rem;
+}
+.sendCode {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #5962b2;
+  border-radius: 0 0.08rem 0.08rem 0;
+  width: 2.1rem;
+  height: 100%;
+  font-size: 0.32rem;
+  color: #fff;
+}
+.submitBtn {
+  width: 5.86rem;
+  height: 0.8rem;
+  background: url("../images/btn_reg@3x.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 0.48rem auto 0 auto;
+  display: block;
+  font-size: 0.32rem;
+  color: #fff;
+}
+
+.tishi {
+  margin: 0;
+  display: none;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  /*display: none;*/
+  min-width: 112px;
+  min-height: 45px;
+  padding: 16px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 999999;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+.successMode {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(17, 22, 60, 0.8);
+}
+.header {
+  height: 0.86rem;
+  width: 100%;
+  max-width: 750px;
+  background-color: rgba(11, 21, 31, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 0 0.21rem;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+.downLogo {
+  width: 0.66rem;
+  height: 0.66rem;
+}
+.logoSize {
+  margin-left: 0.16rem;
+}
+.logoSize span {
+  display: block;
+  color: #fff;
+  font-size: 0.24rem;
+}
+span.sizeBig {
+  font-size: 0.32rem;
+  margin-bottom: 0.06rem;
+}
+.topDownBtn {
+  width: 1.64rem;
+  height: 0.48rem;
+  background-color: #5962b2;
+  border-radius: 0.08rem;
+  position: absolute;
+  right: 0.32rem;
+  color: #fff;
+  font-size: 0.24rem;
+}
+.successWrap {
+  width: 6.6rem;
+  padding-top: 2.23rem;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.closeDown {
+  position: absolute;
+  right: 0.12rem;
+  top: 0.9rem;
+  width: 1rem;
+}
+.topBg {
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  left: 0.41rem;
+}
+.downInfo {
+  width: 6.6rem;
+  height: 2.64rem;
+  padding: 0.16rem;
+  background: url("../images/download.png") no-repeat right;
+  background-size: 6.27rem 100%;
+  height: 2.64rem;
+}
+.downloadTip {
+  padding: 0.48rem 0 0.32rem 0;
+  font-size: 0.32rem;
+  color: #455dd4;
+}
+.downloadBtn {
+  width: 4.96rem;
+  height: 0.8rem;
+  background: url("../images/bg_down@3x.png") no-repeat;
+  background-size: 100% 100%;
+  font-size: 0.32rem;
+  color: #fff;
+}

@@ -1,0 +1,407 @@
+window._CCSettings = {
+    platform: "web-mobile",
+    groupList: [
+        "default"
+    ],
+    collisionMatrix: [
+        [
+            true
+        ]
+    ],
+    rawAssets: {
+        assets: {
+            "15oDh54rZIbKr+4rWwexWr": [
+                "1@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "8aqVsT0UFHB4I8h63MO6zQ": [
+                "1@2x.png",
+                "cc.Texture2D"
+            ],
+            "4cVZBmSj9JUKtZlY0c1d1M": [
+                "2@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "9dBOd4lPJKeZGroLewDeS3": [
+                "2@2x.png",
+                "cc.Texture2D"
+            ],
+            d7GrXGt5lHp6ehFB9wbTs5: [
+                "3@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "18nwnXMGNC5b9xln543GGd": [
+                "3@2x.png",
+                "cc.Texture2D"
+            ],
+            "41V5abFZ9LorxBhwar1T7E": [
+                "4@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "4f7Rap6h5ES6CL+QbqrVsB": [
+                "4@2x.png",
+                "cc.Texture2D"
+            ],
+            "12WCIiu1FADLuNdhnza8c3": [
+                "5@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "7ckj8DToREJKnVlQ9jbOwM": [
+                "5@2x.png",
+                "cc.Texture2D"
+            ],
+            ecCQO6DW1BPLuzJGYaOr3X: [
+                "6@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "57ISSdM6BJuK8F/qAMlZtF": [
+                "6@2x.png",
+                "cc.Texture2D"
+            ],
+            bbic94vrlHQrnz7WB3dXAq: [
+                "7@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            cagtTBiwNJH6ayAWQOtqgl: [
+                "7@2x.png",
+                "cc.Texture2D"
+            ],
+            "3a7Vp0TFpAU4nF3xgbaHr2": [
+                "8@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "07Ao47O8FKBK01HxPlJ6bv": [
+                "8@2x.png",
+                "cc.Texture2D"
+            ],
+            "70cKNOIohOMJUBAEip2cPW": [
+                "9@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "31+oOiIg1J2YVj2vwV9/Bt": [
+                "9@2x.png",
+                "cc.Texture2D"
+            ],
+            "88zp+cGR1OcY0FW0EAYEsn": [
+                "A@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "14rr7jifNCTKso/DOAftrS": [
+                "A@2x.png",
+                "cc.Texture2D"
+            ],
+            f4NKliGklPDqYK0PHvmHGV: [
+                "B@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            f2IZzt87RGDacfYrhWqBjb: [
+                "B@2x.png",
+                "cc.Texture2D"
+            ],
+            "24bqLuBX5ONopdUJCXgjlh": [
+                "C@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "09BkSCN09BFaOie7hjkZ06": [
+                "C@2x.png",
+                "cc.Texture2D"
+            ],
+            ebSApPuDRA37VYWD6xub7q: [
+                "D@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "51Q6Co5RhE+5aQYLiIodsM": [
+                "D@2x.png",
+                "cc.Texture2D"
+            ],
+            "eatjkI2a1CAo6K+KA01P3y": [
+                "E@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "13DAjpd0pLHI4JmwNZihhm": [
+                "E@2x.png",
+                "cc.Texture2D"
+            ],
+            "7etX1WXuxNKrSQ1Vt8nUbn": [
+                "F@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "7eNo3UEzxFk5LXTjl+GEX2": [
+                "F@2x.png",
+                "cc.Texture2D"
+            ],
+            d58yVcJlZN0blhKUaVtMHH: [
+                "bgc@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "eferRj8nBCXKW7GL/hfb7E": [
+                "bgc@2x.jpg",
+                "cc.Texture2D"
+            ],
+            "28avc9QIdPVL6xHTdTg85X": [
+                "btn_下注@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "78IW8uck5AGJQvHiXkgrg0": [
+                "btn_下注@2x.png",
+                "cc.Texture2D"
+            ],
+            "efMb1+zn5L8ZXanJx8JxA1": [
+                "btn_清空选择@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "2bsLabtEdOroVlPzcDfgTM": [
+                "btn_清空选择@2x.png",
+                "cc.Texture2D"
+            ],
+            "361gdE/FNMz7vprwhbm2Oq": [
+                "game_bg",
+                "cc.SpriteFrame",
+                1
+            ],
+            "9cPnBzzTVMmKLJ6IHdoFRw": [
+                "game_bg.jpg",
+                "cc.Texture2D"
+            ],
+            "44g0oQ7zlF9J7GoO2cNKvz": [
+                "icon_add@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "22THNk1PBNuK9Bgrx2UiqB": [
+                "icon_add@2x.jpg",
+                "cc.Texture2D"
+            ],
+            c4sgTvjxBIt57Uya8oCzxa: [
+                "icon_banker@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            ccFibnCZ1JLq4fayi3WrtG: [
+                "icon_banker@2x.png",
+                "cc.Texture2D"
+            ],
+            "10VkmBpGtMmpeA6HAjoRSX": [
+                "icon_充值@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "5bYp2zKTxJHIOuDPyD0/yd": [
+                "icon_充值@2x.png",
+                "cc.Texture2D"
+            ],
+            "04iJqpBIpFEIV1Agy1o29T": [
+                "icon_设置@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "f8troa/W1B6qXeK6dtWOpE": [
+                "icon_设置@2x.png",
+                "cc.Texture2D"
+            ],
+            "b4KhXMqG1L+YVNkPbFd+44": [
+                "反面@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "1bNaIsARpFOJvOReJ31F2B": [
+                "反面@2x.png",
+                "cc.Texture2D"
+            ],
+            "0bdpO7N8ZD6YScBK86Hpnq": [
+                "时间倒计时@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "6bDsMR3dBODaxlOuJATNUP": [
+                "时间倒计时@2x.png",
+                "cc.Texture2D"
+            ],
+            "0a7YCQUBJA2LIlTFjEPIfx": [
+                "没牛@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "91Xk4bAjxFlaa6FyKRQt8/": [
+                "没牛@2x.png",
+                "cc.Texture2D"
+            ],
+            "297Aza95hHgarLxf+zBCTO": [
+                "牛1@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            b5y1TgaaRB7ZA2Dc7mYSae: [
+                "牛1@2x.png",
+                "cc.Texture2D"
+            ],
+            "edDtE+IlRJb4/XYyr88ZtO": [
+                "牛2@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "50xDTivl5EcLNlFq1w7IhC": [
+                "牛2@2x.png",
+                "cc.Texture2D"
+            ],
+            "f3cCyutchDIKfTWc1y+fjy": [
+                "牛3@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            a8ghvfBiZNa7yeoavgYB0X: [
+                "牛3@2x.png",
+                "cc.Texture2D"
+            ],
+            "17A4Rpmg9Ecriqkf6RUP9h": [
+                "牛4@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            d2RWAbPnxHqbjuEQC6MJeP: [
+                "牛4@2x.png",
+                "cc.Texture2D"
+            ],
+            "a3wnlLKBZDUIKXF/+KJSNw": [
+                "牛5@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "7a2jTJUVtE9r3RnsncqCQx": [
+                "牛5@2x.png",
+                "cc.Texture2D"
+            ],
+            cfKQg5bvxNNbzn7JgaG3ZN: [
+                "牛6@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            aceaar5qdFYb9uZg6t8k6b: [
+                "牛6@2x.png",
+                "cc.Texture2D"
+            ],
+            "56mENdUDJB6LMd7/CrvgO3": [
+                "牛7@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "38jEkPGfBPOKxtDWg+4Br1": [
+                "牛7@2x.png",
+                "cc.Texture2D"
+            ],
+            bbSTwkPplAo4ZIhD2zm695: [
+                "牛8@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            "da6fG9LCFE+4eR7zdAJ8VM": [
+                "牛8@2x.png",
+                "cc.Texture2D"
+            ],
+            "69sxroqhNDAanJ4ZyAkHYZ": [
+                "牛9@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            f399531L1Kt7cI48dxDRrG: [
+                "牛9@2x.png",
+                "cc.Texture2D"
+            ],
+            "05HrThP7ZCsr39zmTOGbJf": [
+                "牛牛@2x",
+                "cc.SpriteFrame",
+                1
+            ],
+            fc6YXwYpdDhLzzgDUGmwNZ: [
+                "牛牛@2x.png",
+                "cc.Texture2D"
+            ],
+            d9x9itGfBLBoD1KCstMzgC: [
+                "牛牛主图",
+                "cc.SpriteFrame",
+                1
+            ],
+            "16im8mR6pHXbLmpGJAtfim": [
+                "牛牛主图.png",
+                "cc.Texture2D"
+            ]
+        }
+    },
+    launchScene: "db://assets/scenes/game_scene.fire",
+    scenes: [
+        {
+            url: "db://assets/scenes/game_scene.fire",
+            uuid: "fbJntWW5ZHhY6HOmiIjDMD"
+        }
+    ],
+    packedAssets: {
+        "079fd6b66": [
+            "07Ao47O8FKBK01HxPlJ6bv",
+            "09BkSCN09BFaOie7hjkZ06",
+            "13DAjpd0pLHI4JmwNZihhm",
+            "14rr7jifNCTKso/DOAftrS",
+            "16im8mR6pHXbLmpGJAtfim",
+            "18nwnXMGNC5b9xln543GGd",
+            "1bNaIsARpFOJvOReJ31F2B",
+            "22THNk1PBNuK9Bgrx2UiqB",
+            "2bsLabtEdOroVlPzcDfgTM",
+            "31+oOiIg1J2YVj2vwV9/Bt",
+            "38jEkPGfBPOKxtDWg+4Br1",
+            "4f7Rap6h5ES6CL+QbqrVsB",
+            "50xDTivl5EcLNlFq1w7IhC",
+            "51Q6Co5RhE+5aQYLiIodsM",
+            "57ISSdM6BJuK8F/qAMlZtF",
+            "5bYp2zKTxJHIOuDPyD0/yd",
+            "6bDsMR3dBODaxlOuJATNUP",
+            "78IW8uck5AGJQvHiXkgrg0",
+            "7a2jTJUVtE9r3RnsncqCQx",
+            "7ckj8DToREJKnVlQ9jbOwM",
+            "7eNo3UEzxFk5LXTjl+GEX2",
+            "8aqVsT0UFHB4I8h63MO6zQ",
+            "91Xk4bAjxFlaa6FyKRQt8/",
+            "9cPnBzzTVMmKLJ6IHdoFRw",
+            "9dBOd4lPJKeZGroLewDeS3",
+            "a8ghvfBiZNa7yeoavgYB0X",
+            "aceaar5qdFYb9uZg6t8k6b",
+            "b5y1TgaaRB7ZA2Dc7mYSae",
+            "cagtTBiwNJH6ayAWQOtqgl",
+            "ccFibnCZ1JLq4fayi3WrtG",
+            "d2RWAbPnxHqbjuEQC6MJeP",
+            "da6fG9LCFE+4eR7zdAJ8VM",
+            "eferRj8nBCXKW7GL/hfb7E",
+            "f2IZzt87RGDacfYrhWqBjb",
+            "f399531L1Kt7cI48dxDRrG",
+            "f8troa/W1B6qXeK6dtWOpE",
+            "fc6YXwYpdDhLzzgDUGmwNZ"
+        ],
+        "0cc3970c9": [
+            "1aYU4h5wVLTJgWx1KoPZ6i",
+            "28avc9QIdPVL6xHTdTg85X",
+            "d9x9itGfBLBoD1KCstMzgC",
+            "eaW9EM75ZMBbRDKm7rFNOf",
+            "fbJntWW5ZHhY6HOmiIjDMD"
+        ]
+    },
+    md5AssetsMap: {},
+    orientation: "landscape",
+    debug: true,
+    subpackages: {}
+};

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "右侧流光_竖@2x",
+    "texture": "351dade7-b88c-4474-8ce2-e25af17fa3c4",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      4,
+      330
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      4,
+      330
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

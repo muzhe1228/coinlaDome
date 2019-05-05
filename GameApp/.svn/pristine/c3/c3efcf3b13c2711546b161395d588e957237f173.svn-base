@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "fd7ac894-645c-4a0d-b86b-037ba6a3db1b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "我的投注": {
+      "ver": "1.0.3",
+      "uuid": "d6126722-13d8-4d03-a353-cd83a5fd0b27",
+      "rawTextureUuid": "fd7ac894-645c-4a0d-b86b-037ba6a3db1b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 16,
+      "width": 132,
+      "height": 33,
+      "rawWidth": 132,
+      "rawHeight": 66,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

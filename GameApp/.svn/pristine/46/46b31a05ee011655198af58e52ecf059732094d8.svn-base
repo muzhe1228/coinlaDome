@@ -1,0 +1,51 @@
+"use strict";
+cc._RF.push(module, 'c1ac9Kx19hNc4ax5rYOb0t7', 'main-world');
+// script/main-world.js
+
+"use strict";
+
+var _global = require("./global");
+
+var _global2 = _interopRequireDefault(_global);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+cc.Class({
+  extends: cc.Component,
+
+  properties: {
+    mySelfPrefab: {
+      default: null,
+      type: cc.Prefab
+    },
+    settingPrefab: {
+      default: null,
+      type: cc.Prefab
+    },
+    zhuangPreFab: {
+      default: null,
+      type: cc.Prefab
+    }
+  },
+
+  // LIFE-CYCLE CALLBACKS:
+
+  onLoad: function onLoad() {
+    _global2.default.$http.Post("http://192.168.10.200:7001/uac/user/getRandomName", {}, function (err, res) {
+      console.log(err, res);
+    });
+    var mySelf = cc.instantiate(this.mySelfPrefab),
+        setting = cc.instantiate(this.settingPrefab),
+        zhuang = cc.instantiate(this.zhuangPreFab);
+    mySelf.parent = this.node;
+    setting.parent = this.node;
+    zhuang.parent = this.node;
+  }
+
+  // start() {},
+
+  // update (dt) {},
+
+}); // const global = require("./global");
+
+cc._RF.pop();

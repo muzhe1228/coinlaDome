@@ -1,0 +1,914 @@
+a {
+  display: inline-block;
+}
+.color_3 {
+  color: #333 !important;
+}
+/******************* header *****************/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #fff;
+}
+.header {
+  width: 13.66rem;
+  height: 0.8rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  padding-left: 0.36rem;
+}
+.header .logo img {
+  width: 1.9rem;
+  vertical-align: middle;
+}
+.header .right_nav {
+  display: flex;
+}
+.header .right_nav a {
+  margin-right: 0.36rem;
+  font-size: 0.16rem;
+  color: #000;
+}
+.header .right_nav a.active {
+  color: #cdb164;
+}
+
+main {
+  min-width: 13.66rem;
+  margin: auto;
+  padding-top: 0.8rem;
+}
+/********************** banner部分 ************************/
+#banner {
+  width: 100%;
+  touch-action: none;
+  position: relative;
+}
+.downloadBtn {
+  display: none;
+}
+.banner,
+.m_banner {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+.unslider-arrow {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+}
+.unslider-arrow.prev {
+  left: 0.4rem;
+}
+.unslider-arrow.next {
+  right: 0.4rem;
+}
+.banner > ul > li,
+.m_banner > ul > li {
+  float: left;
+}
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: background 0.5s, opacity 0.5s;
+}
+.dots li.active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.banner .banner1 {
+  width: 100%;
+  background: url(../images/newIndex/bg_banner.png) center no-repeat;
+  background-size: cover;
+}
+.banner .banner2 {
+  width: 100%;
+  height: 6rem;
+  vertical-align: top;
+}
+.banner .banner_info {
+  display: none;
+  width: 13.66rem;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+.banner .banner_left,
+.banner .banner_right {
+  width: 50%;
+  height: 6rem;
+  position: relative;
+}
+.banner .banSize {
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+  height: 3.02rem;
+}
+.banner .banSize li:first-child {
+  margin-bottom: 0.24rem;
+  width: 3.22rem;
+}
+
+.banner .banSize li:nth-child(2) {
+  margin-bottom: 0.3rem;
+  width: 2.37rem;
+}
+.banner .banSize li:nth-child(3) {
+  margin-bottom: 0.24rem;
+  width: 2.42rem;
+}
+.banner .banSize li:nth-child(4) {
+  width: 3.82rem;
+}
+.banner .banSize li:last-child {
+  margin-top: 0.5rem;
+  width: 2.44rem;
+}
+.banner .banSize li img {
+  width: 100%;
+}
+.q_code {
+  width: 1.78rem;
+  height: 1.78rem;
+  position: absolute;
+  right: 0.8rem;
+  top: 1.72rem;
+}
+.q_code img {
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+.banner_right img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.m_banner {
+  display: none;
+}
+
+/*************************** intord 游戏介绍部分 **********************************/
+
+#gameIntrod {
+  width: 100%;
+  position: relative;
+}
+.gameIntrod_lbg,
+.gameIntrod_lbgz {
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  width: 1.48rem;
+}
+.gameIntrod_rbg,
+.gameIntrod_rbgz {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1.48rem;
+}
+.gameIntrod {
+  width: 13.66rem;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+.intord_title {
+  text-align: center;
+  padding: 0.44rem;
+}
+.intord_title img {
+  width: 4.78rem;
+}
+.intord {
+  width: 11.41rem;
+  height: 2.22rem;
+  margin: 0 auto 0.44rem auto;
+  font-size: 0.16rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.intordSize {
+  width: 6.88rem;
+}
+.intord .intordSize p {
+  font-size: 0.16rem;
+  line-height: 0.32rem;
+}
+.intord_nn {
+  background: url(../images/newIndex/bg_hxnn.png) no-repeat center;
+  background-size: cover;
+  padding-left: 3.1rem;
+}
+.intord_jc {
+  background: url(../images/newIndex/bg_hxjc.png) no-repeat center;
+  background-size: cover;
+  padding-left: 2.16rem;
+}
+.intord_db {
+  background: url(../images/newIndex/bg_yydb.png) no-repeat center;
+  background-size: cover;
+  padding-left: 3.1rem;
+}
+
+/*************************** Feature 游戏特色部分 **********************************/
+#gameFeature {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.gameFeature {
+  background: url(../images/newIndex/feature1.png) no-repeat top;
+  background-size: cover;
+  height: 3.2rem;
+  position: relative;
+}
+.feature_size {
+  position: absolute;
+  right: 1.1rem;
+  top: 0.76rem;
+  width: 5.68rem;
+}
+.Feature_explain {
+  width: 11.4rem;
+  margin: auto;
+  display: flex;
+  padding-top: 2.2rem;
+}
+.Feature_explain li {
+  width: 3.8rem;
+  height: 2.08rem;
+  background-color: #ddc172;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Feature_explain li:nth-child(2) {
+  width: 3.8rem;
+  height: 2.08rem;
+  background-color: #cdb164;
+}
+.Feature_explain li img {
+  width: 1.02rem;
+}
+.Feature_explain li p {
+  padding-left: 0.2rem;
+}
+.Feature_explain li p span {
+  display: block;
+  font-size: 0.2rem;
+  margin-bottom: 0.12rem;
+}
+.Feature_explain li p strong {
+  display: block;
+  font-size: 0.24rem;
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+}
+/*************************** Block Chain Competition 区块链竞彩 **********************************/
+
+#blockCompetition {
+  width: 100%;
+  padding-top: 1.56rem;
+  background-color: #f7f7f7;
+}
+.blockCompetition {
+  width: 13.66rem;
+  margin: auto;
+}
+.block_title {
+  text-align: center;
+  padding-bottom: 0.44rem;
+}
+.block_title img {
+  width: 4.75rem;
+}
+.whatBlock,
+.blockWhat {
+  width: 11.4rem;
+  min-height: 3.14rem;
+  border: 0.14rem solid #d7d7d7;
+  margin: 0 auto 0.4rem auto;
+  position: relative;
+}
+.BlockImg1 {
+  position: absolute;
+  left: 0.3rem;
+  top: -0.38rem;
+  width: 2.3rem;
+  height: 2.84rem;
+}
+.BlockImg2 {
+  position: absolute;
+  right: 0.3rem;
+  bottom: -0.38rem;
+  width: 2.3rem;
+  height: 2.84rem;
+}
+.blockSize {
+  margin-right: 2.64rem;
+  padding: 0.3rem 36px 0 36px;
+}
+.whatSize {
+  margin-left: 2.64rem;
+  margin-right: 0;
+}
+.whatSize p {
+  text-indent: 0.32rem;
+}
+.blockSize h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.36rem;
+  color: #333;
+}
+.blockSize h2 span {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.08rem;
+  width: 100%;
+  height: 0.18rem;
+  background-color: #fdeec2;
+  z-index: -1;
+}
+.blockSize p {
+  font-size: 0.16rem;
+  color: #666;
+  line-height: 0.36rem;
+}
+
+/*************************** Agent 代理合作 **********************************/
+#gameAgent {
+  width: 100%;
+  background-color: #eaeaea;
+  position: relative;
+  min-height: 7.26rem;
+  padding-bottom: 0.8rem;
+}
+.agentBg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.33rem;
+}
+.gameAgent {
+  width: 13.66rem;
+  margin: auto;
+}
+.agent_title {
+  text-align: center;
+  padding: 0.46rem 0;
+}
+.agent_title img {
+  width: 3.83rem;
+}
+.agentList {
+  padding: 0 1.16rem;
+  display: flex;
+}
+.agent_l ul {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+.agent_l {
+  width: 50%;
+}
+.agent_l img {
+  margin-right: 0.16rem;
+  width: 0.48rem;
+}
+.agent_l p {
+  font-size: 0.16rem;
+  line-height: 0.36rem;
+  color: #666;
+}
+.agent_l p span {
+  font-size: 0.16rem;
+}
+.agent_l h3 {
+  font-size: 0.24rem;
+  line-height: 0.48rem;
+}
+
+/*************************** contactUs 联系我们 **********************************/
+#contactUs {
+  width: 100%;
+  padding-bottom: 0.64rem;
+  background-color: #f7f7f7;
+}
+.contactUs {
+  width: 13.66rem;
+  position: relative;
+  margin: auto;
+}
+.us_title {
+  width: 3.3rem;
+  height: 1.6rem;
+  background-color: #ddc172;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -1.65rem;
+  top: -0.8rem;
+}
+.us_title img {
+  width: 2.62rem;
+}
+.usUl {
+  display: flex;
+  width: 10.24rem;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 1.56rem;
+}
+.usUl img {
+  width: 1.76rem;
+}
+.usUl a {
+  position: relative;
+}
+.usUl .use_code {
+  width: 1.76rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+.usUl a:hover > .use_code {
+  opacity: 1;
+}
+
+/*************************** footer 底部 **********************************/
+footer {
+  width: 100%;
+  min-height: 3.2rem;
+  background-color: #272728;
+}
+.footer {
+  width: 13.66rem;
+  padding: 0 0.2rem;
+  margin: auto;
+}
+.footer_title {
+  text-align: center;
+  font-size: 0.32rem;
+  color: #b5b5b5;
+  padding: 0.5rem 0;
+}
+.footer_title strong {
+  font-size: 0.32rem;
+}
+.footer_wrap {
+  display: flex;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.01rem solid #000;
+}
+.footer_wrap ul {
+  width: 50%;
+  display: flex;
+}
+.footer_l {
+  padding-top: 0.36rem;
+}
+.footer_logo {
+  width: 2.97rem;
+  height: 1rem;
+  /* background-color: #debd63; */
+  margin-right: 0.6rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.footer_logo img {
+  width: 1.9rem;
+}
+.footer_l a,
+.footer_group p {
+  display: block;
+  color: #b5b5b5;
+  font-size: 0.18rem;
+  line-height: 0.33rem;
+  cursor: pointer;
+}
+.footer_group p span {
+  font-size: 0.18rem;
+}
+.footer_r {
+  justify-content: flex-end;
+}
+.footer_r li {
+  padding: 0 0.2rem;
+}
+.footer_r .footer_Img {
+  padding-top: 0.7rem;
+}
+.footer_r .footer_Img img {
+  width: 1.98rem;
+}
+
+.footer_group {
+  position: relative;
+}
+
+.footer_group::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 0.01rem;
+  background-color: #686869;
+  opacity: 0.2;
+}
+.footer_l a:hover,
+.footer_group p:hover {
+  color: #fff;
+}
+.footer_group p {
+  line-height: 0.47rem;
+}
+.footer_group p img {
+  vertical-align: middle;
+  width: 0.32rem;
+}
+.footer_r .footer_code {
+  padding-right: 0;
+}
+.footer_code img {
+  width: 1.42rem;
+  height: 1.42rem;
+  pointer-events: auto;
+}
+.copyright {
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: 0.12rem;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  /******************* header *****************/
+  .header {
+    height: 1.6rem;
+  }
+  .header .logo {
+    padding-left: 0.36rem;
+  }
+  .header .logo img {
+    width: 2.4rem;
+    vertical-align: middle;
+  }
+  .header .right_nav {
+    display: flex;
+  }
+  .header .right_nav a {
+    margin-right: 0.36rem;
+    font-size: 0.42rem;
+    color: #000;
+  }
+
+  main {
+    padding-top: 1.6rem;
+  }
+  /********************** banner部分 ************************/
+  #banner {
+    margin-bottom: 1rem;
+  }
+  .banner {
+    display: none;
+  }
+  .m_banner {
+    display: block;
+  }
+  .mBanner {
+    width: 100%;
+    height: 16.02rem;
+    position: relative;
+    /* margin-bottom: 1rem; */
+    background: url(../images/newIndex/mbg_banner.png) center no-repeat;
+    background-size: contain;
+  }
+  .dots {
+    bottom: 2rem;
+  }
+
+  .m_banner .banner2 {
+    width: 100%;
+    height: 16.02rem;
+    vertical-align: top;
+    /* margin-bottom: 1rem; */
+  }
+  .downloadBtn {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -2.84rem;
+    transform: translateY(-50%);
+  }
+  .downloadBtn img {
+    width: 5.68rem;
+  }
+
+  /*************************** intord 游戏介绍部分 **********************************/
+  .gameIntrod_lbgz {
+    top: 55%;
+  }
+  .gameIntrod_rbgz {
+    bottom: 55%;
+  }
+  .intord_title img {
+    width: 7.17rem;
+  }
+  .intord {
+    width: 11.66rem;
+    padding: 40px;
+    align-items: flex-end;
+  }
+  .intordSize {
+    width: 100%;
+  }
+  .intord .intordSize p {
+    font-size: 0.36rem;
+    line-height: 1.8;
+  }
+  .intord_nn {
+    height: 10.04rem;
+    background: url(../images/newIndex/mbg_hxnn.png) no-repeat center;
+    background-size: contain;
+  }
+  .intord_jc {
+    height: 9.07rem;
+    background: url(../images/newIndex/mbg_hxjc.png) no-repeat center;
+    background-size: contain;
+  }
+  .intord_db {
+    height: 10.55rem;
+    background: url(../images/newIndex/mbg_yydb.png) no-repeat center;
+    background-size: contain;
+  }
+  /*************************** Feature 游戏特色部分 **********************************/
+  .feature_size {
+    left: 50%;
+    top: 0.4rem;
+    width: 8.5rem;
+    transform: translateX(-50%);
+  }
+  .gameFeature {
+    padding-top: 2rem;
+    background-size: cover;
+    height: auto;
+  }
+  .Feature_explain {
+    width: 11.4rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0.4rem;
+    align-items: center;
+  }
+  .Feature_explain li {
+    width: 11.66rem;
+    height: 3.2rem;
+    background-color: #ddc172;
+    margin-bottom: 0.4rem;
+    padding: 0 0.6rem;
+    justify-content: flex-start;
+    border-radius: 0.08rem;
+  }
+  .Feature_explain li:nth-child(2) {
+    width: 11.66rem;
+    height: 3.2rem;
+  }
+
+  .Feature_explain li img {
+    width: 1.88rem;
+  }
+  .Feature_explain li p span {
+    display: inline-block;
+    font-size: 0.26rem;
+  }
+  .Feature_explain li p strong {
+    font-size: 0.36rem;
+  }
+
+  /*************************** Block Chain Competition 区块链竞彩 **********************************/
+
+  #blockCompetition {
+    padding: 0.4rem 0;
+  }
+  .block_title {
+    padding-bottom: 0.44rem;
+  }
+  .block_title img {
+    width: 7.125rem;
+  }
+  .whatBlock,
+  .blockWhat {
+    width: 12.8rem;
+    min-height: 3.14rem;
+    display: flex;
+    align-items: center;
+    padding: 0.24rem;
+  }
+  .blockWhat {
+    flex-direction: row-reverse;
+  }
+  .BlockImg1 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 3.4rem;
+  }
+  .BlockImg2 {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 3.4rem;
+  }
+  .blockSize {
+    margin-right: 0;
+    padding: 0.3rem 0.36rem 0 0.36rem;
+    flex: 1;
+  }
+  .whatSize {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .whatSize p {
+    text-indent: 0.68rem;
+  }
+  .blockSize h2 {
+    font-size: 0.48rem;
+  }
+
+  .blockSize p {
+    font-size: 0.36rem;
+    line-height: 0.72rem;
+  }
+  /*************************** Agent 代理合作 **********************************/
+  #gameAgent {
+    padding-bottom: 0.8rem;
+  }
+  .agent_title img {
+    width: 5.75rem;
+  }
+  .agentList {
+    padding: 0 1.16rem;
+    flex-direction: column;
+  }
+  .agent_l ul {
+    margin-bottom: 0.4rem;
+  }
+  .agent_l {
+    width: 100%;
+  }
+  .agent_l img {
+    margin-right: 0.32rem;
+    width: 0.72rem;
+  }
+  .agent_l p {
+    font-size: 0.36rem;
+    line-height: 0.72rem;
+  }
+  .agent_l p span {
+    font-size: 0.36rem;
+  }
+  .agent_l h3 {
+    font-size: 0.48rem;
+    line-height: 0.96rem;
+  }
+  /*************************** contactUs 联系我们 **********************************/
+  .us_title {
+    width: 4.96rem;
+    height: 2.4rem;
+    margin-left: -2.48rem;
+    top: -1.2rem;
+  }
+  .us_title img {
+    width: 3.93rem;
+  }
+  .usUl {
+    display: flex;
+    width: 10.24rem;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 1.88rem;
+  }
+  .usUl .use_logo,
+  .usUl .use_code {
+    width: 2rem;
+  }
+
+  /*************************** footer 底部 **********************************/
+
+  .footer_title {
+    text-align: center;
+    font-size: 0.64rem;
+    color: #b5b5b5;
+    padding: 1rem 0;
+  }
+  .footer_title strong {
+    font-size: 0.64rem;
+  }
+  .footer_wrap {
+    display: block;
+    padding-bottom: 0;
+  }
+  .footer_wrap ul {
+    width: 100%;
+  }
+  .footer_l {
+    justify-content: space-between;
+    border-bottom: 0.01rem solid #000;
+    padding-bottom: 0.8em;
+  }
+  .footer_l li {
+    width: 50%;
+    text-align: center;
+  }
+  .footer_logo {
+    width: 50%;
+    height: 1rem;
+    margin-right: 0.6rem;
+    text-align: center;
+    line-height: 1rem;
+  }
+  .footer_logo img {
+    width: 2.85rem;
+  }
+  .footer_l a,
+  .footer_group p {
+    display: block;
+    color: #b5b5b5;
+    font-size: 0.36rem;
+    line-height: 0.66rem;
+    cursor: pointer;
+  }
+  .footer_group p span {
+    font-size: 0.36rem;
+  }
+  .footer_r {
+    justify-content: space-between;
+    padding: 0.8em 0.4rem;
+  }
+  .footer_r li {
+    padding: 0 0.2rem;
+  }
+  .footer_r .footer_Img {
+    padding-top: 0.7rem;
+  }
+  .footer_r .footer_Img img {
+    width: 2.97rem;
+  }
+  .footer_group p {
+    line-height: 0.96rem;
+  }
+  .footer_group p img {
+    vertical-align: middle;
+    width: 0.64rem;
+  }
+  .footer_r .footer_code {
+    padding-right: 0;
+  }
+  .footer_code img {
+    width: 2.84rem;
+    height: 2.84rem;
+    pointer-events: auto;
+  }
+  .copyright {
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #fff;
+  }
+}

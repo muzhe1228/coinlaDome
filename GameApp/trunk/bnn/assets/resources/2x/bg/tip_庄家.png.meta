@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "6bc6026e-a8f1-45c0-85f3-dbd03797e9e4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "tip_庄家": {
+      "ver": "1.0.3",
+      "uuid": "5a21ea51-b02e-43dc-b50b-44b2799f446e",
+      "rawTextureUuid": "6bc6026e-a8f1-45c0-85f3-dbd03797e9e4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 513,
+      "height": 147,
+      "rawWidth": 515,
+      "rawHeight": 147,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "f221b73f-5ff8-4fa7-91c5-9d1a7003f42b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "tip_通赔": {
+      "ver": "1.0.3",
+      "uuid": "fc4679e1-9e86-4207-a284-087db2561c13",
+      "rawTextureUuid": "f221b73f-5ff8-4fa7-91c5-9d1a7003f42b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 515,
+      "height": 147,
+      "rawWidth": 515,
+      "rawHeight": 147,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

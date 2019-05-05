@@ -1,0 +1,1 @@
+{"version":3,"sources":["global.js"],"names":["global"],"mappings":";;;;;;;;;AAAA,IAAMA,SAAS,EAAf;;kBAEeA","file":"global.js","sourceRoot":"..\\..\\..\\..\\assets\\script","sourcesContent":["const global = {};\r\n\r\nexport default global;\r\n"]}

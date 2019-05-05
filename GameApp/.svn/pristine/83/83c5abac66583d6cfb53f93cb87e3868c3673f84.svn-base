@@ -1,0 +1,62 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/event-listener.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '838f0LQFkpFtrDP9sw4Nas2', 'event-listener', __filename);
+// script/event-listener.js
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var EventListener = function EventListener(obj) {
+  var Register = {};
+  obj.on = function (name, method) {
+    if (!Register.hasOwnProperty(name)) {
+      Register[name] = [];
+    }
+    Register[name].push(method);
+  };
+  obj.fire = function (name) {
+    if (Register.hasOwnProperty(name)) {
+      var handlerList = Register[name];
+      for (var i = 0; i < handlerList.length; i++) {
+        var handler = handlerList[i];
+        var args = [];
+        for (var j = 1; j < arguments.length; j++) {
+          args.push(arguments[j]);
+        }
+        handler.apply(this, args);
+        // console.log("args = " + JSON.stringify(args));
+      }
+    }
+  };
+  obj.off = function (name, method) {
+    if (Register.hasOwnProperty(name)) {
+      var handlerList = Register[name];
+      for (var i = 0; i < handlerList.length; i++) {
+        if (handlerList[i] === method) {
+          handlerList.splice(i, 1);
+        }
+      }
+    }
+  };
+  obj.destroy = function () {
+    Register = {};
+  };
+  return obj;
+};
+exports.default = EventListener;
+module.exports = exports["default"];
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=event-listener.js.map
+        

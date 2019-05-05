@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:fitsSystemWindows="true"-->
+
+    <ImageView
+        android:id="@+id/result_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/bitmap_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_share"
+        android:visibility="invisible">
+        <!--android:scaleType="centerCrop"-->
+        <ImageView
+            android:id="@+id/bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/bg_share"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/qr_img"
+                android:layout_width="127dp"
+                android:layout_height="127dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="30dp"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/inp_content_tv"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/corner_view_white_10"
+            android:textColor="@color/finish_gray"
+            android:text="请输入文字"
+            android:textSize="14dp"
+            android:gravity="center_vertical"/>
+        
+        <TextView
+            android:id="@+id/sure_tv"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!--忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="keywords" content="BTC比特币游戏,ETH以太坊游戏,USDT游戏,下载" />
+    <meta
+      name="description"
+      content="BBPK专业区块链游戏服务提供商,提供比特币游戏以及ETH游戏 USDT游戏等服务"
+    />
+    <title>币币PK下载</title>
+    <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="stylesheet" href="static/css/download.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <script type="text/javascript" src="static/js/resize.js"></script>
+    <script type="text/javascript" src="static/js/constant.js"></script>
+    <script type="text/javascript" src="static/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="static/js/random.js"></script>
+    <script type="text/javascript" src="static/js/register.js"></script>
+  </head>
+  <body>
+    <div style="display:none">
+      <script
+        type="text/javascript"
+        src="https://s23.cnzz.com/z_stat.php?id=1276440085&web_id=1276440085"
+      ></script>
+      <script>
+        function isIos_And_Pc() {
+          var u = navigator.userAgent,
+            app = navigator.appVersion;
+          var isAndroid = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1; //g
+          var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+          if (isIOS) {
+            return "ios";
+          } else if (isAndroid) {
+            return "android";
+          } else {
+            return "pc";
+          }
+        }
+        //声明_czc对象:
+        var _czc = _czc || [];
+        //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+        _czc.push(["_setAccount", "1276440085"]);
+        _czc.push(["_setCustomVar", "访客来源", isIos_And_Pc(), 0]);
+      </script>
+    </div>
+    <div class="download_wrap">
+      <img class="download_bg" src="static/images/download/bg.jpg" alt="" />
+      <div class="download_title">
+        点击右上角图标,在弹出菜单中点击【在浏览器打开】
+      </div>
+      <div class="downHanle">
+        <a
+          class="downBtn"
+          href="https://api.pk1955.com/uac/resource/download/app"
+        >
+          <img src="static/images/download/btn@3x.png" alt=""
+        /></a>
+        <p class="downCode">
+          <img
+            class="downCodeImg"
+            src="https://api.pk1955.com/uac/resource/qrcode?text=http://download.bb678.info/uac/resource/download/app"
+            alt=""
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(function() {
+      downUrl();
+      function downUrl() {
+        let terminal = isIos_And_Pc();
+        if (is_weixn_qq()) {
+          $(".downCodeImg").attr(
+            "src",
+            constant.codeUrl + window.location.href
+          );
+        } else {
+          $(".download_title").hide();
+          if (terminal == "ios") {
+            $(".downBtn").attr("href", constant.IosDownload);
+            $(".downCodeImg").attr(
+              "src",
+              constant.codeUrl + constant.IosDownload
+            );
+          } else if (terminal == "android") {
+            $(".downBtn").attr("href", constant.androidDownload);
+            $(".downCodeImg").attr(
+              "src",
+              constant.codeUrl + constant.androidDownload
+            );
+          } else {
+            $(".downBtn").attr("href", constant.androidDownload);
+            $(".downCodeImg").attr(
+              "src",
+              constant.codeUrl + window.location.href
+            );
+          }
+        }
+      }
+    });
+  </script>
+</html>

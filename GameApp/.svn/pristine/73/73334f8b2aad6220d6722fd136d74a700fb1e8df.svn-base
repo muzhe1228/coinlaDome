@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- 删除苹果默认的工具栏和菜单栏 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <!-- 设置苹果工具栏颜色 -->
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <!--忽略页面中的数字识别为电话，忽略email识别 -->
+        <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+        <meta name="HandheldFriendly" content="true" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        />
+        <title>BBPK</title>
+        <link rel="stylesheet" href="static/css/reset.css" />
+        <link rel="icon" type="image/x-icon" href="./favicon.png" />
+        <link rel="stylesheet" href="static/css/new_index.css" />
+        <script src="static/js/resizeIndex.js"></script>
+        <script src="static/js/jquery-2.2.3.min.js"></script>
+        <script src="static/js/event-move.js"></script>
+        <script src="./static/js/jquery.event.swipe.js"></script>
+        <script src="static/js/unslider.min.js"></script>
+        <script src="./static/js/constant.js"></script>
+        <script src="./static/js/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a href="/" class="logo">
+                    <img src="static/images/newIndex/logo.png" alt="" />
+                </a>
+                <div class="right_nav">
+                    <!-- home.navTitle -->
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="banner">
+                <div class="banner">
+                    <ul>
+                        <li class="banner1">
+                            <div class="banner_info">
+                                <div class="banner_left">
+                                    <ul class="banSize">
+                                        <li>
+                                            <img
+                                                src="static/images/newIndex/banSize1.png"
+                                            />
+                                        </li>
+                                        <li>
+                                            <img
+                                                src="static/images/newIndex/banSize2.png"
+                                            />
+                                        </li>
+                                        <li>
+                                            <img
+                                                src="static/images/newIndex/banSize3.png"
+                                            />
+                                        </li>
+                                        <li>
+                                            <img
+                                                src="static/images/newIndex/banSize4.png"
+                                            />
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://game.pk123.app"
+                                                target="_blank"
+                                            >
+                                                <img
+                                                    src="static/images/newIndex/go_game.png"
+                                                />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="q_code">
+                                        <img
+                                            src="https://api.pk1955.com/uac/resource/qrcode?text=http://download.bb678.info/uac/resource/download/app"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="banner_right">
+                                    <img
+                                        src="static/images/newIndex/phone.png"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a
+                                style="width:100%"
+                                target="_blank"
+                                href="https://game.pk123.app/"
+                            >
+                                <img
+                                    class="banner2"
+                                    src="./static/images/newIndex/pc_banner.png"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m_banner">
+                    <ul>
+                        <li class="banner1">
+                            <div class="mBanner"></div>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                href="https://www.bbpk.com/activity/"
+                            >
+                                <img
+                                    class="banner2"
+                                    src="./static/images/newIndex/h5_banner.png"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a
+                    class="downloadBtn"
+                    href="http://download.bb678.info/uac/resource/download/app"
+                >
+                    <img src="static/images/newIndex/mDownload.png" alt="" />
+                </a>
+            </div>
+            <div id="gameIntrod">
+                <div class="gameIntrod">
+                    <div class="intord_title">
+                        <img
+                            src="static/images/newIndex/game_intord.png"
+                            alt=""
+                        />
+                    </div>
+                    <!-- //gameIntrod -->
+                    <div class="intord intord_nn">
+                        <div class="intordSize"></div>
+                    </div>
+                    <div class="intord intord_jc">
+                        <div class="intordSize"></div>
+                    </div>
+                    <div class="intord intord_db" title="区块链，哈希夺宝">
+                        <div class="intordSize"></div>
+                    </div>
+                </div>
+
+                <img
+                    class="gameIntrod_lbg"
+                    src="static/images/newIndex/bg_hash.png"
+                />
+                <img
+                    class="gameIntrod_rbg"
+                    src="static/images/newIndex/bg_hash.png"
+                />
+                <img
+                    class="gameIntrod_lbgz"
+                    src="static/images/newIndex/bg_hash.png"
+                />
+                <img
+                    class="gameIntrod_rbgz"
+                    src="static/images/newIndex/bg_hash.png"
+                />
+            </div>
+            <div id="gameFeature">
+                <div class="gameFeature">
+                    <img
+                        class="feature_size"
+                        src="static/images/newIndex/featureSize.png"
+                        alt=""
+                    />
+                    <ul class="Feature_explain">
+                        <li>
+                            <img src="static/images/newIndex/icon_1.png" />
+                            <p class="featureSize"></p>
+                        </li>
+                        <li>
+                            <img src="static/images/newIndex/icon_2.png" />
+                            <p class="featureSize"></p>
+                        </li>
+                        <li>
+                            <img src="static/images/newIndex/icon_3.png" />
+                            <p class="featureSize"></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="blockCompetition">
+                <div class="blockCompetition">
+                    <div class="block_title">
+                        <img src="static/images/newIndex/block.png" alt="" />
+                    </div>
+                    <div class="whatBlock">
+                        <img
+                            class="BlockImg1"
+                            src="static/images/newIndex/img1.png"
+                            alt=""
+                        />
+                        <div class="blockSize whatSize">
+                            <!-- home.BlockList -->
+                        </div>
+                    </div>
+                    <div class="blockWhat">
+                        <img
+                            class="BlockImg2"
+                            src="static/images/newIndex/img2.png"
+                            alt=""
+                        />
+                        <div class="blockSize sizeWhat">
+                            <!-- home.BlockList -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gameAgent">
+                <div class="gameAgent">
+                    <div class="agent_title">
+                        <img src="static/images/newIndex/agent.png" alt="" />
+                    </div>
+                    <div class="agentList">
+                        <!-- home.agentListL -->
+                        <div class="agent_l lData">
+                            <ul>
+                                <li>
+                                    <img
+                                        src="static/images/newIndex/icon_4.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="size"></li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img
+                                        src="static/images/newIndex/icon_4.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="size"></li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img
+                                        src="static/images/newIndex/icon_6.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="size"></li>
+                            </ul>
+                        </div>
+                        <!-- home.agentListR -->
+                        <div class="agent_l rData">
+                            <ul>
+                                <li>
+                                    <img
+                                        src="static/images/newIndex/icon_5.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="size"></li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img
+                                        src="static/images/newIndex/icon_6.png"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="size"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img
+                    class="agentBg"
+                    src="static/images/newIndex/agentBg.png"
+                    alt=""
+                />
+            </div>
+            <div id="contactUs">
+                <div class="contactUs">
+                    <div class="us_title">
+                        <img src="static/images/newIndex/contact.png" alt="" />
+                    </div>
+                    <ul class="usUl">
+                        <li>
+                            <a href="javacript:;">
+                                <img
+                                    class="use_logo"
+                                    src="static/images/newIndex/wechat.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="use_code"
+                                    src="https://api.pk1955.com/uac/resource/qrcode?text=BBPK789"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javacript:;">
+                                <img
+                                    class="use_logo"
+                                    src="static/images/newIndex/qqBig.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="use_code"
+                                    src="https://api.pk1955.com/uac/resource/qrcode?text=941980273"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/bbpkcom" target="_blank">
+                                <img
+                                    class="use_logo"
+                                    src="static/images/newIndex/telegram.png"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p class="footer_title"></p>
+                <div class="footer_wrap">
+                    <ul class="footer_l">
+                        <li class="footer_logo">
+                            <a href="#banner">
+                                <img
+                                    src="static/images/newIndex/logo.png"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li class="footer_list"></li>
+                    </ul>
+                    <ul class="footer_r">
+                        <li class="footer_Img">
+                            <img
+                                src="static/images/newIndex/contactUs.png"
+                                alt=""
+                            />
+                        </li>
+                        <li class="footer_group">
+                            <p>
+                                <img
+                                    src="static/images/newIndex/qq.png"
+                                    alt=""
+                                />
+                                <span>941980273</span>
+                            </p>
+                            <p>
+                                <img
+                                    src="static/images/newIndex/weixin.png"
+                                    alt=""
+                                />
+                                <span>BBPK789</span>
+                            </p>
+                            <p>
+                                <img
+                                    src="static/images/newIndex/dianbaoqun.png"
+                                    alt=""
+                                />
+                                <span>https://t.me/bbpkcom</span>
+                            </p>
+                        </li>
+                        <li class="footer_code">
+                            <img
+                                src="https://api.pk1955.com/uac/resource/qrcode?text=http://download.bb678.info/uac/resource/download/app"
+                                alt=""
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    Copyright &copy; 2018 - bbpk.com All Rights Reserved
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+
+名称：游戏socket
+地址：/gameSocket/{userId}/{gameType}/{roomId}/{type}
+参数：userId : 用户id
+  	 gameType : 游戏类型（-1 -未在游戏中，0-牛牛，1-竞猜，2-彩票，3-一元夺宝）
+  	 roomId : -1 -未在游戏中，1-默认
+  	 type : 0
+返回：连接成功
+消息：socketType:{
+		0: "区块高度",
+		1: "小喇叭",
+		2: "pk资产",
+		3: "开奖",
+		4: "游戏聊天",
+		5: "游戏当前",
+		7: "游戏人数头像",
+		8: "游戏位置金额",
+		9: "游戏状态切换",
+		10: "夺币详情",
+		11: "牛牛庄信息",
+		12: "牛牛竞庄",
+		13: "牛牛列表"
+	}
+	区块高度 - {blockId: 区块高度,socketType:0}
+	小喇叭 - {message:"系统消息", type: 0, socketType: 1}
+			{message:"中奖消息", type: 1, socketType: 1, userId: 用户id, nick: 昵称, gameType: 游戏类型, winBets:中奖金额}
+	pk资产 - {balance: 总资产, availableBalance: pk资产, socketType: 2}	
+	开奖 -  竞猜，夺宝 - {roomId: 房间ID,gameType: 游戏类型,winBets: 中奖金额（无该字段则表示未参与游戏）,blockId: 区块高度,userId: 用户ID,result: 结果,hash: hash值,socketType:3}	
+		    牛牛 - {roomId: 房间ID, gameType: 游戏类型, winBets: -1000（无该字段则表示未参与游戏）, blockId: 区块高度, userId: 用户ID, hash: hash值, socketType:3, cardBanker: "123af" 庄牌, cardSky: 天牌, cardLand: 地牌, cardMysterious: 玄牌, niuBanker: 庄牛, niuSky: "牛1", niuLand: “牛牛”, niuMysterious: 玄牛, winBanker: 庄赢, winSky: 天赢, winLand: 地赢, winMysterious: 玄赢}
+
+	游戏聊天 - {userId: 用户id, userName: 用户昵称,content: 内容,socketType:4}
+	//游戏当前 - {userId: 用户id, nick: 昵称,positionType: 位置,bets: 下注额,reward: 奖励,startNo: 开始号,endNo: 结束号,socketType: 5}
+	人数头像 - 首次 - {peopleNum: 人数, headList: 头像列表, type: 0, socketType: 7} 
+			  增 - {peopleNum: 人数, type: 1, userId: 用户id,head: 头像,socketType: 7}	
+			  减 - {peopleNum: 人数, type: 2, socketType: 7}	
+	//位置金额 - {positionType: 位置,positionAssets: 下注总金额,pkMaxBets: 最大值,myBets: 我的总下注,bets: 该次下注,userId: 用户ID,type:(0-落筹码, 1-不落筹码), socketType:8}	
+
+	位置金额 - {userId: 用户ID, totalBets: 我的总下注额, lockBets: 我的冻结金额, list:[positionType: 位置, positionAssets: 位置总下注额, myBets: 我的该位置下注额, bets: 本次下注额, type: 0-落筹码 1-不落筹码], socketType:8}	  
+
+	夺宝详情 - {type: 0, totalNumber: 总数,purchasedNumber: 已售,socketType: 10}
+	状态切换 - {state: (0-下注 1-封盘 2-重新开盘 3-牛牛竞庄 4-牛牛上庄 5-生成位置),time: 结束时间 如是0表示倒计时未开始, serverTime: 当前服务器时间, socketType:9}
+
+	牛牛庄信息 - {userId: 用户id, nick: 昵称, head: 头像, remain: 连庄数, maxRemain: 最大连庄数, lockBets: 庄资产, socketType: 11}
+	牛牛竞庄 - {userId: 用户id, nick: 昵称, head: 头像, currencyNumber: 数量, socketType:12}
+	牛牛列表 - {roomId: 房间id, peopleNumber: 人数, roomStatus: 房间状态, socketType: 13}
+	转账信息 - {socketType: 14, message: 转账信息}
+	牛牛下庄信息 - {roomId: 房间id, userId: 用户ID, 用来判断自己是否为庄家, socketType: 15, type: (0-连庄结束, 1-被迫下庄), total: 总收益, one: 单局最高赢 }
+
+
+

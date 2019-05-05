@@ -1,0 +1,65 @@
+@import '~assets/stylus/variable.styl';
+.dialog-leave-active {
+  // 动画离开过程：0.5s
+  transition: all 0.4s ease;
+}
+.dialog-enter-active {
+  // 动画离开过程：0.5s
+  transition: all 0.2s ease;
+}
+.dialog-enter, .dialog-leave-active {
+  // 动画之前的位置
+  transform: scale(0.4);
+  opacity: 0;
+}
+.dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding-bottom: 0.479401rem;
+  .modal {
+    background-color: #2b2f57;
+    border-radius: 0.059925rem;
+    animation: Scale 0.8s ease;
+    color: #fff;
+    font-size: 0.194757rem;
+    position: relative;
+    &-head {
+      height: 0.599251rem;
+      width: 100%;
+      text-align: center;
+      background: url('~assets/Images/PersonalPage/alert_head_bg.png') 0 0 / 100% 100% no-repeat !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .headImg {
+        height: 0.434457rem;
+      }
+      .close {
+        position: absolute;
+        width: 0.419476rem;
+        height: 0.419476rem;
+        right: 0;
+        top: -0.554307rem;
+      }
+    }
+  }
+}
+@keyframes Scale {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

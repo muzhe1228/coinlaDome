@@ -1,0 +1,20 @@
+export default {
+  TokenTrading: "Token Trading",
+  Assets: "Assets",
+  Mining: "Mining",
+  Help: "Help",
+  LogIn: "Log In",
+  SignUp: "Sign Up",
+  SignUpFree: "Sign Up",
+  DownloadAPP: "Download APP",
+  Deposit: "Deposit",
+  Withdraw: "Withdraw",
+  Available: "Available",
+  DepositRecords: "Deposit Records",
+  WithdrawalRecords: "Withdrawal Records",
+  Address: "Address",
+  Fee: "Fee",
+  GameRecordTitle: "GameRecord",
+  HeadImg: "HeadImg",
+  Explain: "Explain"
+};

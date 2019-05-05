@@ -1,0 +1,61 @@
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/crypto-js/pad-iso10126.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '2f0d30qudJHTpQHNtp+jHH8', 'pad-iso10126', __filename);
+// script/crypto-js/pad-iso10126.js
+
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+;(function (root, factory, undef) {
+	if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") {
+		// CommonJS
+		module.exports = exports = factory(require("./core"), require("./cipher-core"));
+	} else if (typeof define === "function" && define.amd) {
+		// AMD
+		define(["./core", "./cipher-core"], factory);
+	} else {
+		// Global (browser)
+		factory(root.CryptoJS);
+	}
+})(undefined, function (CryptoJS) {
+
+	/**
+  * ISO 10126 padding strategy.
+  */
+	CryptoJS.pad.Iso10126 = {
+		pad: function pad(data, blockSize) {
+			// Shortcut
+			var blockSizeBytes = blockSize * 4;
+
+			// Count padding bytes
+			var nPaddingBytes = blockSizeBytes - data.sigBytes % blockSizeBytes;
+
+			// Pad
+			data.concat(CryptoJS.lib.WordArray.random(nPaddingBytes - 1)).concat(CryptoJS.lib.WordArray.create([nPaddingBytes << 24], 1));
+		},
+
+		unpad: function unpad(data) {
+			// Get number of padding bytes from last byte
+			var nPaddingBytes = data.words[data.sigBytes - 1 >>> 2] & 0xff;
+
+			// Remove padding
+			data.sigBytes -= nPaddingBytes;
+		}
+	};
+
+	return CryptoJS.pad.Iso10126;
+});
+
+cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=pad-iso10126.js.map
+        

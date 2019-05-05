@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!--忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="keywords" content="BTC比特币游戏,ETH以太坊游戏,USDT游戏" />
+    <meta
+      name="description"
+      content="BBPK专业区块链游戏服务提供商,提供比特币游戏以及ETH游戏 USDT游戏等服务"
+    />
+    <title>BTC比特币游戏,ETH以太坊游戏,USDT游戏...bbpk.com</title>
+    <link rel="stylesheet" href="../static/css/reset.css" />
+    <link rel="stylesheet" href="../static/css/mobile.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.png" />
+    <script type="text/javascript" src="../static/js/resize.js"></script>
+    <script type="text/javascript" src="../static/js/random.js"></script>
+    <script type="text/javascript" src="../static/js/constant.js"></script>
+
+    <script type="text/javascript" src="../static/js/jquery-2.2.3.min.js"></script>
+  </head>
+  <body>
+    <div class="mobile_wrap">
+      <header>
+        <img class="logo" src="../static/images/mobile/logo.png" alt="" />
+        <a href="" class="right_wrap">
+          <img src="../static/images/mobile/top_left@3x.png" alt="" />
+          <p class="start_size">进入游戏</p>
+          <img src="../static/images/mobile/top_right@3x.png" alt="" />
+        </a>
+      </header>
+      <div class="mobile_cont">
+        <img class="bg" src="../static/images/mobile/bg.jpg" alt="" />
+        <div class="mobile_info">
+          <div class="meinv">
+            <img src="../static/images/mobile/meinv.png" alt="" />
+          </div>
+          <div class="wenan">
+            <img src="../static/images/mobile/weian.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="mobile_bot">
+        <div class="btn_group">
+          <p id="iosDownload">
+            <img src="../static/images/mobile/ios@3x.png" alt="" />
+            IOS下载
+          </p>
+          <p id="androidDownload">
+            <img src="../static/images/mobile/android@3x.png" alt="" />
+            安卓下载
+          </p>
+        </div>
+        <img
+          class="bottom_left"
+          src="../static/images/mobile/bottom_金币堆_left@3x.png"
+          alt=""
+        />
+        <img
+          class="bottom_right"
+          src="../static/images/mobile/bottom_金币堆_right@3x.png"
+          alt=""
+        />
+        <img
+          class="bottom_right_mid"
+          src="../static/images/mobile/bottom_金币堆_mid@3x.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    $(function() {
+      downUrl();
+      function downUrl() {
+        $(".right_wrap").attr("href", constant.browserGameUrl);
+        let terminal = isIos_And_Pc();
+        if (is_weixn_qq()) {
+          $("#iosDownload,#androidDownload").click(function() {
+            alert("请在浏览器打开");
+          });
+        } else {
+          $("#iosDownload").click(function() {
+            window.open(constant.IosDownload);
+          });
+          $("#androidDownload").click(function() {
+            // window.open(constant.androidDownload);
+            location.href = constant.androidDownload;
+          });
+        }
+      }
+    });
+  </script>
+</html>

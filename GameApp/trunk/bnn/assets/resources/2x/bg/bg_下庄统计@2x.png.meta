@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "678e48ca-912b-4e55-842d-70cab29b27b0",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "bg_下庄统计@2x": {
+      "ver": "1.0.3",
+      "uuid": "b760919f-2f48-44b8-87da-8f4e2ce23265",
+      "rawTextureUuid": "678e48ca-912b-4e55-842d-70cab29b27b0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 4,
+      "trimY": 0,
+      "width": 806,
+      "height": 368,
+      "rawWidth": 813,
+      "rawHeight": 368,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

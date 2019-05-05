@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/result_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/bitmap_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_share"
+            android:visibility="invisible">
+            <!--android:scaleType="centerCrop"-->
+            <ImageView
+                android:id="@+id/bg_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/bg_share"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/qr_img"
+                android:layout_width="127dp"
+                android:layout_height="127dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="62dp"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <com.example.administrator.myapplication.util.NoScrollWebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--android:layout_alignBottom="@id/webView"-->
+    <TextView
+        android:id="@+id/inp_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
