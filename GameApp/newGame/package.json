@@ -16,7 +16,7 @@
     "fastclick": "^1.0.6",
     "glob-all": "^3.1.0",
     "html2canvas": "^1.0.0-alpha.12",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jsencrypt": "^3.0.0-rc.1",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
